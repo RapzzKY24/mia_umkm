@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function UmkmCard({ item }) {
   return (
+
     <Link
       href={`/umkm/${item.id}`}
       className="group block rounded-2xl border border-zinc-200 bg-white shadow-sm hover:shadow-md transition overflow-hidden"

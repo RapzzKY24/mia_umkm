@@ -1,4 +1,4 @@
-import umkmData from '../../../../umkm.json';
+import umkmData from '../../../data/umkm.json';
 import UMKMDetailClient from './UMKMDetailClient';
 import styles from './page.module.css';
 
@@ -11,10 +11,10 @@ export async function generateStaticParams() {
 
 
 export default function UMKMDetailPage({ params }) {
+
   const umkm = umkmData.find(u => u.id === params.id);
 
   if (!umkm) {
-
     return (
       <div className={styles.container}>
         <main className={styles.main}>
@@ -23,6 +23,7 @@ export default function UMKMDetailPage({ params }) {
       </div>
     );
   }
+
 
   return <UMKMDetailClient umkm={umkm} />;
 }

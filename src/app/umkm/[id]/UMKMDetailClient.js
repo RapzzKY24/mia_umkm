@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -24,11 +23,12 @@ export default function UMKMDetailClient({ umkm }) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
+        {/* Tombol kembali yang menggunakan router.back() untuk navigasi ke halaman sebelumnya */}
         <button onClick={() => router.back()} className={`${styles.backButton} button-secondary`}>
           &larr; Kembali
         </button>
 
-        {/* --- Image Section --- */}
+        {/* Menampilkan gambar, kategori, nama, rating, lokasi, deskripsi, dan peta */}
         <div className={styles.imageWrapper}>
           <Image
             src={umkm.imageUrl}
@@ -42,10 +42,7 @@ export default function UMKMDetailClient({ umkm }) {
           <span className={styles.categoryTag}>{umkm.category}</span>
         </div>
 
-        {/* --- Two-Column Content Layout --- */}
         <div className={styles.contentLayout}>
-          
-          {/* Left Column: Details */}
           <section className={styles.detailsSection}>
             <h1 className={styles.name}>{umkm.name}</h1>
             <div className={styles.ratingLocation}>
@@ -55,7 +52,6 @@ export default function UMKMDetailClient({ umkm }) {
             <p className={styles.description}>{umkm.description}</p>
           </section>
 
-          {/* Right Column: Map */}
           <aside className={styles.mapSection}>
             <h2>Lokasi UMKM</h2>
             <div className={styles.mapEmbed}>
@@ -73,9 +69,7 @@ export default function UMKMDetailClient({ umkm }) {
             </div>
             <p className={styles.mapNote}>.</p>
           </aside>
-
         </div>
-
       </main>
 
       <footer className={styles.footer}>
