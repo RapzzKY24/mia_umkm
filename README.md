@@ -42,12 +42,6 @@ cd mia_umkm
 2. Install Dependensi
 
 Setelah masuk ke direktori proyek, install semua dependensi yang dibutuhkan:
-
-code
-Bash
-download
-content_copy
-expand_less
 npm install
 # atau
 # yarn install
@@ -56,40 +50,9 @@ npm install
 3. Jalankan Mode Development
 
 Sekarang, kamu bisa menjalankan aplikasi dalam mode pengembangan:
-
-code
-Bash
-download
-content_copy
-expand_less
 npm run dev
-# atau
-# yarn dev
-# atau
-# pnpm dev
 
 Buka di browser kamu: http://localhost:3000
-
-4. Build untuk Produksi (Opsional)
-
-Jika kamu ingin melakukan build aplikasi untuk produksi, gunakan perintah berikut:
-
-code
-Bash
-download
-content_copy
-expand_less
-npm run build
-
-Setelah proses build selesai, kamu bisa menjalankan versi produksi aplikasi:
-
-code
-Bash
-download
-content_copy
-expand_less
-npm start
-```
 
 ##📁 Struktur Proyek
 Berikut adalah gambaran singkat struktur direktori utama proyek ini:
