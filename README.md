@@ -22,17 +22,13 @@ Proyek ini dibangun menggunakan teknologi-teknologi modern berikut:
 *   **JSON Data (`umkm.json`)**: Data UMKM disimpan secara lokal dalam format JSON, mudah untuk dikelola dan diimplementasikan.
 
 ## 🚀 Cara Menjalankan Proyek
-
-Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi Mia UMKM di lingkungan pengembangan lokal kamu.
-
-### Prasyarat
-
+## Prasyarat
 Sebelum memulai, pastikan kamu memiliki ini terinstal di sistem kamu:
 
 *   [Node.js](https://nodejs.org/en/download/) (v18.x atau lebih tinggi direkomendasikan)
 *   [npm](https://www.npmjs.com/get-npm) (biasanya sudah termasuk dengan Node.js), atau [Yarn](https://classic.yarnpkg.com/en/docs/install), atau [pnpm](https://pnpm.io/installation)
 
-### 1. Clone Repositori Ini
+### Clone Repositori Ini
 
 Buka terminal atau Git Bash kamu dan jalankan perintah berikut:
 
@@ -54,7 +50,7 @@ npm run dev
 
 Buka di browser kamu: http://localhost:3000
 
-##📁 Struktur Proyek
+📁 Struktur Proyek
 Berikut adalah gambaran singkat struktur direktori utama proyek ini:
 mia_umkm/
 ├── app/                  # Root dari Next.js App Router
@@ -77,9 +73,3 @@ mia_umkm/
 │   └── NavLinks.js       # Data untuk navigasi di Navbar
 ├── umkm.json             # File JSON yang berisi data dummy UMKM (di root proyek)
 └── package.json          # Metadata proyek dan daftar dependensi
-
-code
-Code
-download
-content_copy
-expand_less
