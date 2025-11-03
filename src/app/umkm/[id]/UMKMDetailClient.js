@@ -22,13 +22,13 @@ export default function UMKMDetailClient({ umkm }) {
 
   return (
     <div className={styles.container}>
+      {/* Konten utama yang bertindak sebagai "card" detail UMKM */}
       <main className={styles.main}>
-        {/* Tombol kembali yang menggunakan router.back() untuk navigasi ke halaman sebelumnya */}
-        <button onClick={() => router.back()} className={`${styles.backButton} button-secondary`}>
+        <button onClick={() => router.back()} className={`${styles.backButton} ${styles.buttonSecondary}`}>
           &larr; Kembali
         </button>
 
-        {/* Menampilkan gambar, kategori, nama, rating, lokasi, deskripsi, dan peta */}
+        {/* --- Bagian Gambar --- */}
         <div className={styles.imageWrapper}>
           <Image
             src={umkm.imageUrl}
@@ -37,12 +37,15 @@ export default function UMKMDetailClient({ umkm }) {
             height={450}
             sizes="(max-width: 768px) 100vw, 900px"
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            priority
+            priority // Memuat gambar ini lebih awal
           />
           <span className={styles.categoryTag}>{umkm.category}</span>
         </div>
 
+        {/* --- Tata Letak Konten Dua Kolom --- */}
         <div className={styles.contentLayout}>
+
+          {/* Kolom Kiri: Detail UMKM */}
           <section className={styles.detailsSection}>
             <h1 className={styles.name}>{umkm.name}</h1>
             <div className={styles.ratingLocation}>
@@ -52,6 +55,7 @@ export default function UMKMDetailClient({ umkm }) {
             <p className={styles.description}>{umkm.description}</p>
           </section>
 
+          {/* Kolom Kanan: Peta Lokasi */}
           <aside className={styles.mapSection}>
             <h2>Lokasi UMKM</h2>
             <div className={styles.mapEmbed}>
@@ -69,12 +73,14 @@ export default function UMKMDetailClient({ umkm }) {
             </div>
             <p className={styles.mapNote}>.</p>
           </aside>
-        </div>
-      </main>
 
-      <footer className={styles.footer}>
-        Informasi Detail UMKM
-      </footer>
+        </div>
+
+        {/* --- Footer (Dipindahkan ke dalam main content) --- */}
+        <footer className={styles.footer}>
+          Informasi Detail UMKM
+        </footer>
+      </main>
     </div>
   );
 }

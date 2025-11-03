@@ -1,3 +1,11 @@
+:root {
+  --color-bg-dark: #222;
+  --color-text-light: #f0f0f0;
+  --color-light-teal: #4adede;
+  --color-deep-navy: #00204a;
+  --color-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
 .container {
   min-height: 100vh;
   display: flex;
@@ -5,23 +13,43 @@
   align-items: center;
   background-color: var(--color-bg-dark);
   color: var(--color-text-light);
+  padding-bottom: 2rem;
 }
 
 .main {
-  flex: 1;
+  flex-grow: 1;
   width: 100%;
   max-width: 900px;
   padding: 2rem 1rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   background-color: #413d3d;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #3f3f46;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.button-secondary:hover {
+  background-color: #52525b;
 }
 
 .backButton {
   margin-bottom: 2rem;
-  font-size: 1rem;
 }
 
 .imageWrapper {
@@ -31,7 +59,7 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--color-shadow);
-  margin-bottom: 2rem; /* Added space below image */
+  margin-bottom: 2rem;
 }
 
 .categoryTag {
@@ -44,18 +72,19 @@
   border-radius: 8px;
   font-size: 1em;
   font-weight: bold;
+  z-index: 10;
 }
 
-/* New layout container for two columns */
 .contentLayout {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  margin-top: 1rem;
+  flex-grow: 1;
 }
 
-/* Left column for details */
 .detailsSection {
-  flex: 2; /* Takes more space */
+  flex: 2;
   display: flex;
   flex-direction: column;
 }
@@ -80,10 +109,8 @@
   color: #ccc;
 }
 
-/* Right column for map - adjusted */
 .mapSection {
-  flex: 1; /* Takes less space */
-  /* Resetting old styles */
+  flex: 1;
   margin-top: 0;
   padding-top: 0;
   border-top: none;
@@ -97,7 +124,7 @@
 
 .mapEmbed {
   width: 100%;
-  height: 300px; /* Adjusted height for column layout */
+  height: 300px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--color-shadow);
@@ -126,20 +153,17 @@
   align-items: center;
   color: #999;
   font-size: 0.9rem;
-  background-color: #333;
-  margin-top: auto;
-  border-radius: 0 0 12px 12px;
+  background-color: transparent;
+  margin-top: 2.5rem;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
-  /* Stack columns on smaller screens */
   .contentLayout {
     flex-direction: column;
     gap: 2rem;
   }
   .mapSection {
-    margin-top: 2rem; /* Add space when stacked */
+    margin-top: 2rem;
   }
   .name {
     font-size: 2rem;
@@ -163,5 +187,18 @@
   }
   .mapSection h2 {
     font-size: 1.5rem;
+  }
+  .main {
+    padding: 1.5rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .backButton {
+    margin-bottom: 1.5rem;
+  }
+  .imageWrapper {
+    margin-bottom: 1.5rem;
+  }
+  .footer {
+    margin-top: 2rem;
   }
 }
