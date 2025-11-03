@@ -38,49 +38,6 @@ Sebelum memulai, pastikan kamu memiliki ini terinstal di sistem kamu:
 *   [Node.js](https://nodejs.org/en/download/) (v18.x atau lebih tinggi direkomendasikan)
 *   [npm](https://www.npmjs.com/get-npm) (biasanya sudah termasuk dengan Node.js), atau [Yarn](https://classic.yarnpkg.com/en/docs/install), atau [pnpm](https://pnpm.io/installation)
 
-### 1. Clone Repositori Ini
-
-Buka terminal atau Git Bash kamu dan jalankan perintah berikut:
-
-git clone https://github.com/RapzzKY24/mia_umkm.git
-cd mia_umkm
-2. Install Dependensi
-Setelah masuk ke direktori proyek, install semua dependensi yang dibutuhkan:
-code
-Bash
-npm install
-# atau
-# yarn install
-# atau
-# pnpm install
-3. Jalankan Server Pengembangan
-Sekarang, kamu bisa menjalankan aplikasi dalam mode pengembangan:
-code
-Bash
-npm run dev
-# atau
-# yarn dev
-# atau
-# pnpm dev
-Aplikasi akan berjalan di http://localhost:3000. Buka browser kamu dan kunjungi alamat tersebut untuk melihat aplikasi Mia UMKM beraksi!
-4. (Opsional) Build untuk Produksi
-Jika kamu ingin melakukan build aplikasi untuk produksi, gunakan perintah berikut:
-code
-Bash
-npm run build
-# atau
-# yarn build
-# atau
-# pnpm build
-Setelah build selesai, kamu bisa menjalankan aplikasi yang sudah di-build:
-code
-Bash
-npm start
-# atau
-# yarn start
-# atau
-# pnpm start
-
 ## 📁 Struktur Proyek
 Berikut adalah gambaran singkat struktur direktori utama proyek ini:
 code
