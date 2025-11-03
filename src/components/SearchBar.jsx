@@ -35,7 +35,7 @@ export default function SearchBar() {
         onChange={(e) => setQ(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && go()}
         placeholder="Cari UMKM, kategori, lokasi…"
-        className="w-full rounded-full border border-zinc-200 bg-white/70 px-9 py-2 text-sm text-zinc-800 outline-none placeholder:text-zinc-400 focus:border-pink-300 focus:bg-white focus:shadow-sm"
+        className="w-full rounded-full border border-zinc-200 bg-white/70 px-9 py-2 text-sm text-zinc-800 outline-none placeholder:text-zinc-400 focus:border-sky-300 focus:bg-white focus:shadow-sm"
       />
       {q && (
         <button
@@ -49,7 +49,7 @@ export default function SearchBar() {
       <button
         type="button"
         onClick={go}
-        className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full bg-pink-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-pink-600"
+        className="absolute right-1 top-1/2 -translate-y-1/2 rounded-full bg-sky-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-sky-600"
       >
         Cari
       </button>

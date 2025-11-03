@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import SearchBar from "@/components/SearchBar";
 import MobileSearch from "@/components/MobileSearch";
+import { navLinks } from "@/utils/NavLinks";
 
 const links = [
   { href: "/", label: "Beranda" },
@@ -16,7 +17,6 @@ const links = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
   const close = () => setOpen(false);
 
   return (
@@ -28,25 +28,27 @@ const Navbar = () => {
           className="flex items-center gap-2 shrink-0"
           onClick={close}
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-pink-500 to-purple-600">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-cyan-600">
             <span className="text-xl font-bold text-white">⚡</span>
           </div>
           <span className="text-xl font-bold text-gray-900">UMKM</span>
         </Link>
 
+        {/* Search */}
         <div className="hidden md:block w-full max-w-lg mx-4">
           <SearchBar />
         </div>
 
+        {/* Desktop links */}
         <ul className="hidden lg:flex items-center gap-8">
-          {links.map((l) => (
+          {navLinks.map((l) => (
             <li key={l.href}>
               <Link
                 href={l.href}
                 className={
                   "font-medium transition-colors " +
                   (l.highlight
-                    ? "text-pink-600 hover:text-pink-700"
+                    ? "text-sky-600 hover:text-sky-700"
                     : "text-gray-700 hover:text-gray-900")
                 }
               >
@@ -56,15 +58,17 @@ const Navbar = () => {
           ))}
         </ul>
 
+        {/* CTA (desktop) */}
         <div className="hidden lg:flex items-center gap-2">
           <Link
             href="/signup"
-            className="rounded-full bg-gradient-to-r from-pink-500 to-pink-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:from-pink-600 hover:to-pink-700"
+            className="rounded-full bg-gradient-to-r from-sky-500 to-sky-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:from-sky-600 hover:to-sky-700"
           >
             Daftar <span className="ml-0.5">›</span>
           </Link>
         </div>
 
+        {/* Right (mobile) */}
         <div className="flex items-center gap-2 lg:hidden">
           <MobileSearch />
           <button
@@ -78,6 +82,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile menu */}
       <div
         className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-300 ${
           open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -97,7 +102,7 @@ const Navbar = () => {
                   className={
                     "block rounded-lg px-3 py-2 text-sm font-medium " +
                     (l.highlight
-                      ? "text-pink-600 hover:bg-pink-50"
+                      ? "text-sky-600 hover:bg-sky-50"
                       : "text-gray-700 hover:bg-zinc-50")
                   }
                 >
@@ -109,7 +114,7 @@ const Navbar = () => {
               <Link
                 href="/signup"
                 onClick={close}
-                className="block rounded-xl bg-gradient-to-r from-pink-500 to-pink-600 px-3 py-2 text-center text-sm font-semibold text-white hover:from-pink-600 hover:to-pink-700"
+                className="block rounded-xl bg-gradient-to-r from-sky-500 to-sky-600 px-3 py-2 text-center text-sm font-semibold text-white hover:from-sky-600 hover:to-sky-700"
               >
                 Daftar
               </Link>
