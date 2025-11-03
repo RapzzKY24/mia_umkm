@@ -84,7 +84,6 @@ const Navbar = () => {
         }`}
       >
         <div className="px-4 sm:px-6 pb-4">
-          {/* Mobile full-width search */}
           <div className="md:hidden py-2">
             <SearchBar />
           </div>
