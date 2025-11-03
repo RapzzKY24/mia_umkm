@@ -40,8 +40,6 @@ Sebelum memulai, pastikan kamu memiliki ini terinstal di sistem kamu:
 
 ## 📁 Struktur Proyek
 Berikut adalah gambaran singkat struktur direktori utama proyek ini:
-code
-Code
 mia_umkm/
 ├── app/                  # Root dari Next.js App Router
 │   ├── layout.js         # Layout utama untuk semua halaman (termasuk Navbar)
