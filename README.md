@@ -1,47 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Mia UMKM: Platform Direktori UMKM Lokal
 
-## Getting Started
+Selamat datang di Mia UMKM! 👋 Ini adalah sebuah platform direktori UMKM (Usaha Mikro, Kecil, dan Menengah) yang dirancang untuk membantu pengguna menemukan dan menjelajahi bisnis lokal di sekitar mereka. Aplikasi ini menyediakan tampilan detail setiap UMKM, termasuk informasi produk/layanan, lokasi, rating, dan deskripsi.
+
+Tujuan utama proyek ini adalah menyediakan antarmuka yang bersih dan intuitif untuk mencari dan mendapatkan informasi tentang UMKM, sekaligus mendemonstrasikan kemampuan Next.js 14 dengan App Router.
+
+## ✨ Fitur Utama
+
+Berikut adalah beberapa fitur keren yang ada di aplikasi ini:
+
+*   **Daftar UMKM**: Menampilkan ringkasan UMKM dalam bentuk kartu (Card) di halaman utama atau halaman daftar khusus.
+*   **Halaman Detail Dinamis**: Menampilkan informasi lengkap setiap UMKM di halaman detail yang dibuat secara dinamis (misal: `/umkm/UMKM001`).
+*   **Integrasi Peta Lokasi**: Halaman detail UMKM menyertakan peta interaktif (embed iframe) yang menampilkan lokasi UMKM berdasarkan data koordinat yang tersedia.
+*   **Fungsionalitas Pencarian**: Navigasi dilengkapi dengan fitur pencarian yang responsif dan tersedia baik di desktop maupun mode *mobile* (pop-up).
+*   **Carousel Otomatis**: Komponen carousel/banner dengan navigasi dan pemutaran otomatis telah disediakan, siap untuk diintegrasikan di halaman beranda atau bagian promosi.
+*   **Navigasi Adaptif**: Navbar yang responsif dengan menu *mobile* yang akan otomatis tertutup saat navigasi ke halaman detail atau halaman lain.
+*   **Alur Navigasi Detail**: Dari halaman detail UMKM, disarankan untuk kembali menggunakan tombol "Kembali" yang disediakan untuk memastikan alur pengguna yang konsisten.
+
+## 🛠️ Teknologi yang Digunakan
+
+Proyek ini dibangun menggunakan teknologi-teknologi modern berikut:
+
+*   **Next.js 14 (App Router)**: Framework React untuk produksi dengan fitur-fitur *powerful* seperti *server-side rendering*, *static site generation*, dan *routing* yang canggih.
+*   **React.js**: Library UI JavaScript yang populer untuk membangun antarmuka pengguna yang interaktif.
+*   **Tailwind CSS**: Framework CSS *utility-first* yang memungkinkan desain cepat dan kustomisasi tinggi tanpa meninggalkan HTML Anda.
+*   **Lucide React**: Koleksi ikon modern dan ringan yang mudah diintegrasikan.
+*   **Google Maps Embed**: Untuk menampilkan peta lokasi UMKM secara langsung di halaman detail.
+*   **JSON Data**: Data UMKM saat ini disimpan secara lokal dalam file JSON (`umkm.json`) di *root* proyek.
+
+## 🚀 Cara Menjalankan Proyek
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan aplikasi Mia UMKM di lingkungan pengembangan lokal kamu.
+
+### Prasyarat
+
+Sebelum memulai, pastikan kamu memiliki ini terinstal di sistem kamu:
+
+*   [Node.js](https://nodejs.org/en/download/) (v18.x atau lebih tinggi direkomendasikan)
+*   [npm](https://www.npmjs.com/get-npm) (biasanya sudah termasuk dengan Node.js), atau [Yarn](https://classic.yarnpkg.com/en/docs/install), atau [pnpm](https://pnpm.io/installation)
+
+### 1. Clone Repositori Ini
+
+Buka terminal atau Git Bash kamu dan jalankan perintah berikut:
 
 git clone https://github.com/RapzzKY24/mia_umkm.git
-
-First, run the development server:
-
-```bash
+cd mia_umkm
+2. Install Dependensi
+Setelah masuk ke direktori proyek, install semua dependensi yang dibutuhkan:
+code
+Bash
+npm install
+# atau
+# yarn install
+# atau
+# pnpm install
+3. Jalankan Server Pengembangan
+Sekarang, kamu bisa menjalankan aplikasi dalam mode pengembangan:
+code
+Bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# atau
+# yarn dev
+# atau
+# pnpm dev
+Aplikasi akan berjalan di http://localhost:3000. Buka browser kamu dan kunjungi alamat tersebut untuk melihat aplikasi Mia UMKM beraksi!
+4. (Opsional) Build untuk Produksi
+Jika kamu ingin melakukan build aplikasi untuk produksi, gunakan perintah berikut:
+code
+Bash
+npm run build
+# atau
+# yarn build
+# atau
+# pnpm build
+Setelah build selesai, kamu bisa menjalankan aplikasi yang sudah di-build:
+code
+Bash
+npm start
+# atau
+# yarn start
+# atau
+# pnpm start
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-# mia_umkm
-
-Aplikasi berbasis Next.js untuk menampilkan dan menjelajahi data Usaha Mikro, Kecil, dan Menengah (UMKM) lokal. Proyek ini dibangun dengan fokus pada performa dan pengalaman pengguna yang responsif.
-
-## Fitur Utama
-
-- **Daftar UMKM:** Menampilkan ringkasan UMKM dalam bentuk kartu (Card) di halaman utama.
-- **Halaman Detail Dinamis:** Menampilkan informasi lengkap setiap UMKM/page.js].
-- **Integrasi Peta:** Halaman detail UMKM menyertakan peta interaktif (embed iframe) yang menampilkan lokasi UMKM berdasarkan data koordinat/UMKMDetailClient.js].
-- **Fungsionalitas Pencarian:** Navigasi dilengkapi dengan fitur pencarian yang responsif dan juga tersedia dalam mode mobile.
-- **Carousel Otomatis:** Halaman beranda menampilkan carousel/banner dengan navigasi dan pemutaran otomatis untuk promosi atau informasi.
-- **Data Lokal:** Data UMKM saat ini disimpan secara lokal dalam file JSON (`src/data/umkm.json`).
-
-## Teknologi
-
-- **Framework:** [Next.js](https://nextjs.org/) (v15.5.6) menggunakan App Router.
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) untuk utility-first CSS.
-- **Fonts:** Menggunakan font [Geist](https://vercel.com/font) (`--font-geist-sans` dan `--font-geist-mono`) melalui `next/font/google`.
-- **Ikon:** [Lucide React](https://lucide.dev/icons/search).
-
-## Memulai Proyek
-
-Proyek ini menggunakan `npm` sebagai manajer paket.
+## 📁 Struktur Proyek
+Berikut adalah gambaran singkat struktur direktori utama proyek ini:
+code
+Code
+mia_umkm/
+├── app/                  # Root dari Next.js App Router
+│   ├── layout.js         # Layout utama untuk semua halaman (termasuk Navbar)
+│   ├── globals.css       # Global CSS untuk Tailwind
+│   └── umkm/             # Halaman terkait UMKM
+│       ├── page.js       # Halaman daftar UMKM (jika ada, contoh: app/umkm/page.js)
+│       └── [id]/         # Folder untuk halaman detail UMKM dinamis
+│           ├── page.js          # Server Component untuk fetching data UMKM
+│           ├── UMKMDetailClient.js # Client Component untuk UI halaman detail
+│           └── page.module.css    # CSS Modules untuk halaman detail
+├── components/           # Kumpulan komponen UI yang dapat digunakan kembali
+│   ├── CardUmkm.jsx      # (Komponen ini ada tapi tidak digunakan - UmkmCard lebih baru)
+│   ├── Carousel.jsx      # Komponen Carousel generik
+│   ├── MobileSearch.jsx  # Toggle search bar untuk mobile
+│   ├── Navbar.jsx        # Navbar utama aplikasi
+│   ├── NavbarResponsive.jsx # (File kosong, bisa dihapus jika tidak digunakan)
+│   ├── SearchBar.jsx     # Komponen Search Bar
+│   └── UmkmCard.jsx      # Kartu tampilan ringkas untuk setiap UMKM
+├── public/               # Aset statis seperti gambar
+├── utils/                # Utility functions atau data konfigurasi
+│   └── NavLinks.js       # Data untuk navigasi di Navbar
+├── umkm.json             # File JSON yang berisi data dummy UMKM (di root proyek)
+└── package.json          # Metadata proyek dan daftar dependensi
