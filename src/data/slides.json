@@ -1,0 +1,26 @@
+[
+  {
+    "kicker": "Unggulan",
+    "title": "Temukan UMKM Lokal Terbaik",
+    "desc": "Cari produk, jasa, dan mitra di sekitar kamu dengan cepat.",
+    "img": "/public/Mundo de fantasia e conceito de carrosse…",
+    "cta": "Jelajahi",
+    "href": "/umkm"
+  },
+  {
+    "kicker": "Promo",
+    "title": "Diskon Spesial untuk Pengguna Baru",
+    "desc": "Daftar sekarang, nikmatin penawaran dari ratusan UMKM.",
+    "img": "/images/hero-2.jpg",
+    "cta": "Daftar Gratis",
+    "href": "/signup"
+  },
+  {
+    "kicker": "Berita",
+    "title": "Insight & Tren UMKM Minggu Ini",
+    "desc": "Tetap update biar gak ketinggalan peluang.",
+    "img": "/images/hero-3.jpg",
+    "cta": "Baca Berita",
+    "href": "/use-cases"
+  }
+]
