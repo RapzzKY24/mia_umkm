@@ -89,15 +89,10 @@ download
 content_copy
 expand_less
 npm start
-📁 Struktur Proyek
+```
 
+##📁 Struktur Proyek
 Berikut adalah gambaran singkat struktur direktori utama proyek ini:
-
-code
-Code
-download
-content_copy
-expand_less
 mia_umkm/
 ├── app/                  # Root dari Next.js App Router
 │   ├── layout.js         # Layout utama untuk semua halaman (termasuk Navbar)
