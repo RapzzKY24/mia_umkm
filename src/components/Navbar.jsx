@@ -7,14 +7,6 @@ import SearchBar from "@/components/SearchBar";
 import MobileSearch from "@/components/MobileSearch";
 import { navLinks } from "@/utils/NavLinks";
 
-const links = [
-  { href: "/", label: "Beranda" },
-  { href: "/berita", label: "Berita", highlight: true },
-  { href: "/umkm", label: "UMKM" },
-  { href: "/mitra", label: "Mitra" },
-  { href: "/kontak-kami", label: "Kontak Kami" },
-];
-
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
@@ -94,7 +86,7 @@ const Navbar = () => {
           </div>
 
           <ul className="mt-2 space-y-1 rounded-2xl border border-zinc-200 bg-white/90 p-2 shadow-sm">
-            {links.map((l) => (
+            {navLinks.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
