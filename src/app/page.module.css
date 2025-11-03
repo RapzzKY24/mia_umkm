@@ -1,0 +1,253 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.heroSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text-light);
+  background-image: url('/images/hero-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 3;
+  max-width: 900px;
+  padding: 0 1.5rem;
+}
+
+.heroTitle {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-light-teal);
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.heroDescription {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #eee;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.heroButton {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border-radius: 50px; 
+  margin-top: 1rem;
+}
+
+.umkmListingSection {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  background-color: var(--color-bg-light);
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: var(--color-deep-navy);
+}
+
+.sectionDescription {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+  max-width: 700px;
+}
+
+.controls {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  transition: border-color 0.2s ease;
+}
+
+.searchBar:focus {
+  outline: none;
+  border-color: var(--color-medium-blue);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.filterButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filterButton {
+  background-color: var(--color-card-bg);
+  color: var(--color-medium-blue);
+  border: 1px solid var(--color-medium-blue);
+  padding: 0.6em 1.2em;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.filterButton:hover {
+  background-color: var(--color-light-teal);
+  color: var(--color-deep-navy);
+  border-color: var(--color-light-teal);
+}
+
+.filterButton.active {
+  background-color: var(--color-medium-blue);
+  color: var(--color-text-light);
+  border-color: var(--color-medium-blue);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.umkmScrollContainer {
+  display: flex;
+  overflow-x: auto;
+  gap: 25px;
+  width: 100%;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-medium-blue) transparent;
+  box-shadow: inset 0 -3px 5px rgba(0,0,0,0.05);
+  border-radius: 12px;
+}
+
+.umkmScrollContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.umkmScrollContainer::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.umkmScrollContainer::-webkit-scrollbar-thumb {
+  background-color: var(--color-medium-blue);
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.noResults {
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 30px;
+}
+
+.scrollHint {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  font-size: 0.9rem;
+  background-color: var(--color-card-bg);
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.8rem;
+  }
+  .heroDescription {
+    font-size: 1.2rem;
+  }
+  .heroButton {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .sectionDescription {
+    font-size: 0.9rem;
+  }
+  .searchBar {
+    font-size: 1rem;
+  }
+  .filterButtons {
+    justify-content: flex-start;
+  }
+  .umkmScrollContainer {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+  .heroDescription {
+    font-size: 1rem;
+  }
+  .sectionTitle {
+    font-size: 1.7rem;
+  }
+}
