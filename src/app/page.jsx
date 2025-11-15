@@ -38,21 +38,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 hidden md:block">
+      <section className="px-4 sm:px-6  lg:px-8 hidden md:block">
         <Carousel slides={slides} />
       </section>
 
       {/* Top 5 */}
-      <section className="mt-8 md:mt-12 mb-8 md:mb-12">
+      <section className="mt-5">
         <div className="mx-auto w-[95%] max-w-7xl text-center">
-          <h2 className="text-xl mt-4 md:text-2xl font-light text-slate-50">
+          <h2 className="text-xl mt-2 md:text-2xl font-light text-slate-50">
             Top 5 UMKM dengan Rating Tertinggi
           </h2>
           <p className="mt-2 text-xs text-slate-400">
             Dicari berdasarkan ulasan pelanggan & kualitas layanan terbaik.
           </p>
-
-          <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+          <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
             {featured.map((item) => (
               <UmkmCard key={item.id} item={item} />
             ))}
@@ -61,7 +60,7 @@ export default function HomePage() {
       </section>
 
       {/* Layanan */}
-      <section className="mt-10 md:mt-14 mb-12">
+      <section className="mt-5">
         <div className="mx-auto w-[95%] max-w-7xl text-center">
           <h2 className="text-xl font-light text-slate-50">
             Apa yang kalian dapatkan disini?

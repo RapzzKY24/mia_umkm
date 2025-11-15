@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function UmkmCard({ item }) {
   return (
     <Link
-      href={`/tes/${item.id}`}
+      href={`/umkm/${item.id}`}
       className="group block rounded-2xl border border-slate-800 bg-slate-900/80 shadow-md hover:shadow-xl hover:border-sky-500/40 transition-all overflow-hidden"
     >
       <div className="relative h-36 sm:h-40">

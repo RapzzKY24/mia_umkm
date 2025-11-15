@@ -32,7 +32,6 @@ export default function Carousel({
       onMouseEnter={() => (hoverRef.current = true)}
       onMouseLeave={() => (hoverRef.current = false)}
     >
-      {/* Slides */}
       <div
         className="flex transition-transform duration-500 ease-out"
         style={{ transform: `translateX(-${index * 100}%)` }}
@@ -76,7 +75,6 @@ export default function Carousel({
           </div>
         ))}
       </div>
-
       {/* Arrows */}
       <button
         aria-label="Prev"
@@ -92,7 +90,6 @@ export default function Carousel({
       >
         <ChevronRight className="h-5 w-5" />
       </button>
-
       {/* Dots */}
       <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
         {slides.map((_, i) => (

@@ -61,7 +61,7 @@ export const umkmData = [
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d",
     location: "Blok M, Jakarta Selatan",
-    imageUrl: "/images/bakso.jpeg",
+    imageUrl: "/pictUmkm/bakso.jpg",
     coordinates: { lat: -6.2447, lng: 106.8 },
     testimonials: [
       {
@@ -198,7 +198,7 @@ export const umkmData = [
     description:
       "Studio foto keluarga dan wisuda dengan paket terjangkau dan editing rapi.",
     location: "Kebayoran Baru, Jakarta Selatan",
-    imageUrl: "/images/studio-foto-lentera.jpeg",
+    imageUrl: "/pictUmkm/studi.png",
     coordinates: { lat: -6.2433, lng: 106.8008 },
     testimonials: [
       {
@@ -253,7 +253,7 @@ export const umkmData = [
     description:
       "Soto Betawi dengan kuah santan gurih dan daging empuk khas rumahan.",
     location: "Pancoran, Jakarta Selatan",
-    imageUrl: "/images/soto-betawi-mak-eni.jpeg",
+    imageUrl: "/pictUmkm/soto.jpg",
     coordinates: { lat: -6.2492, lng: 106.8547 },
     testimonials: [
       {
@@ -334,7 +334,7 @@ export const umkmData = [
     description:
       "Penjahit kebaya dan dress formal khusus acara wisuda, lamaran, dan kondangan.",
     location: "Tebet, Jakarta Selatan",
-    imageUrl: "/images/jahit-kebaya-mbak-rini.jpeg",
+    imageUrl: "/pictUmkm/kebaya.jpg",
     coordinates: { lat: -6.2321, lng: 106.8549 },
     testimonials: [
       {
@@ -442,7 +442,7 @@ export const umkmData = [
     description:
       "Ruang baca dan belajar untuk anak-anak dengan koleksi buku cerita dan aktivitas kreatif.",
     location: "Cipete, Jakarta Selatan",
-    imageUrl: "/images/taman-bacaan-lentera-anak.jpeg",
+    imageUrl: "/pictUmkm/lentera.jpg",
     coordinates: { lat: -6.2783, lng: 106.8001 },
     testimonials: [
       {

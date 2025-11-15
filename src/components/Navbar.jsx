@@ -71,13 +71,6 @@ const Navbar = () => {
           })}
         </ul>
 
-        {/* CTA (desktop) */}
-        <div className="hidden lg:flex items-center gap-2">
-          <Link href="/signUp">
-            <Button title="Daftar" />
-          </Link>
-        </div>
-
         {/* Right (mobile) */}
         <div className="flex items-center gap-2 lg:hidden">
           <MobileSearch />
