@@ -7,10 +7,16 @@ export default function Carousel({
   slides = [],
   interval = 4000,
   className = "",
+  itemClassName = "relative min-w-full h-56 sm:h-64 md:h-80 lg:h-96",
 }) {
-  const { index, next, prev, go, hoverRef } = useCarousel(slides, interval);
-
   if (!slides.length) return null;
+
+  const isMulti = slides.length > 1;
+
+  const { index, next, prev, go, hoverRef } = useCarousel(
+    slides,
+    isMulti ? interval : 0
+  );
 
   return (
     <div
@@ -23,10 +29,7 @@ export default function Carousel({
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {slides.map((s, i) => (
-          <div
-            key={i}
-            className="relative min-w-full h-56 sm:h-64 md:h-80 lg:h-96"
-          >
+          <div key={i} className={itemClassName}>
             <img
               src={s.img}
               alt={s.title || `slide-${i}`}
@@ -64,35 +67,41 @@ export default function Carousel({
         ))}
       </div>
 
-      <button
-        aria-label="Prev"
-        onClick={prev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-slate-800 p-2 shadow hover:bg-white dark:hover:bg-slate-700"
-      >
-        <ChevronLeft className="h-5 w-5" />
-      </button>
-
-      <button
-        aria-label="Next"
-        onClick={next}
-        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-slate-800 p-2 shadow hover:bg-white dark:hover:bg-slate-700"
-      >
-        <ChevronRight className="h-5 w-5" />
-      </button>
-
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-        {slides.map((_, i) => (
+      {isMulti && (
+        <>
           <button
-            key={i}
-            onClick={() => go(i)}
-            className={`h-2.5 w-2.5 rounded-full transition ${
-              index === i
-                ? "bg-white dark:bg-sky-400"
-                : "bg-white/50 dark:bg-slate-600"
-            }`}
-          />
-        ))}
-      </div>
+            aria-label="Prev"
+            onClick={prev}
+            className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-slate-800 p-2 shadow hover:bg-white dark:hover:bg-slate-700"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+
+          <button
+            aria-label="Next"
+            onClick={next}
+            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-slate-800 p-2 shadow hover:bg-white dark:hover:bg-slate-700"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
+        </>
+      )}
+
+      {isMulti && (
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => go(i)}
+              className={`h-2.5 w-2.5 rounded-full transition ${
+                index === i
+                  ? "bg-white dark:bg-sky-400"
+                  : "bg-white/50 dark:bg-slate-600"
+              }`}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

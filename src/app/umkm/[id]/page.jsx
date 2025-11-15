@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { use } from "react";
 import { notFound } from "next/navigation";
 import { getUmkmById } from "@/utils/umkm";
-import Image from "next/image";
 import Badge from "@/components/Badge";
+import Carousel from "@/components/Carousel";
+import { useMap } from "@/hooks/useMap";
 
-export default function UmkmDetailPage({ params }) {
-  const { id } = params;
+export default function UmkmDetailPage(props) {
+  const { id } = use(props.params);
+
   const item = getUmkmById(id);
 
   if (!item) return notFound();
@@ -24,17 +26,20 @@ export default function UmkmDetailPage({ params }) {
     coordinates,
     mapsUrl,
     testimonials,
+    images,
   } = item;
 
-  const [showMap, setShowMap] = useState(false);
+  const { showMap, openMap, embedSrc, externalMapsUrl } = useMap({
+    coordinates,
+    name,
+    location,
+    mapsUrl,
+  });
 
-  const embedSrc = `https://www.google.com/maps?q=${coordinates.lat},${coordinates.lng}&hl=id&z=16&output=embed`;
-
-  const externalMapsUrl =
-    mapsUrl ??
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-      `${name} ${location}`
-    )}`;
+  const slides =
+    images && images.length > 0
+      ? images.map((src) => ({ img: src, title: name }))
+      : [{ img: imageUrl, title: name }];
 
   return (
     <div
@@ -110,16 +115,15 @@ export default function UmkmDetailPage({ params }) {
             </div>
 
             <div className="mb-6">
-              <Image
-                src={imageUrl}
-                alt={name}
-                className="w-full h-56 sm:h-72 md:h-80 lg:h-96 object-cover rounded-xl shadow-md"
-                width={1200}
-                height={1000}
-                priority
+              <Carousel
+                slides={slides}
+                interval={5000}
+                className="border-0 bg-transparent rounded-xl"
+                itemClassName="relative min-w-full aspect-[16/9]"
               />
             </div>
           </article>
+
           <aside className="lg:col-span-1 grid grid-cols-1 grid-rows-2 gap-6">
             <section
               className="
@@ -144,7 +148,7 @@ export default function UmkmDetailPage({ params }) {
                 ) : (
                   <button
                     type="button"
-                    onClick={() => setShowMap(true)}
+                    onClick={openMap}
                     className="flex h-full w-full items-center justify-center text-xs sm:text-sm text-slate-400"
                   >
                     Google Maps Preview

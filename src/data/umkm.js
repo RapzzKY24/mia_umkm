@@ -6,7 +6,12 @@ export const umkmData = [
     rating: "4.4/5.0",
     description: "Owner gusion pembantai onic 31-5-6 Jo Wik Wik",
     location: "Cibulan Raya,Jakarta Selatan",
-    imageUrl: "/images/manusia-silver.jpeg",
+    imageUrl: "/pictUmkm/Screenshot from 2025-11-15 18-04-59.png",
+    images: [
+      "/pictUmkm/opor-1.jpg",
+      "/pictUmkm/opor-2.jpg",
+      "/pictUmkm/opor-3.jpg",
+    ],
     coordinates: { lat: -6.24043, lng: 106.80852 },
     testimonials: [
       {
@@ -61,6 +66,11 @@ export const umkmData = [
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d",
     location: "Blok M, Jakarta Selatan",
     imageUrl: "/pictUmkm/bakso.jpg",
+    images: [
+      "/pictUmkm/opor-1.jpg",
+      "/pictUmkm/opor-2.jpg",
+      "/pictUmkm/opor-3.jpg",
+    ],
     coordinates: { lat: -6.2447, lng: 106.8 },
     testimonials: [
       {
