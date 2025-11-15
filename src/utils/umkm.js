@@ -15,3 +15,11 @@ export function getUmkmById(id) {
     mapsUrl,
   };
 }
+
+export const parseRating = (ratingStr) => parseFloat(ratingStr.split("/")[0]);
+
+export const getTopRatedUmkm = (data, limit = 5) => {
+  return [...data]
+    .sort((a, b) => parseRating(b.rating) - parseRating(a.rating))
+    .slice(0, limit);
+};

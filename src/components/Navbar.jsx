@@ -8,10 +8,18 @@ import MobileSearch from "@/components/MobileSearch";
 import { navLinks } from "@/utils/NavLinks";
 import Button from "./Button";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+import NavbarResponsive from "./NavbarResponsive";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+  const pathname = usePathname();
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav className="fixed inset-x-0 top-0 z-50 bg-[#020617]/90 backdrop-blur-xl border-b border-white/5">
@@ -43,21 +51,24 @@ const Navbar = () => {
 
         {/* Desktop links */}
         <ul className="hidden lg:flex items-center gap-8">
-          {navLinks.map((l) => (
-            <li key={l.href}>
-              <Link
-                href={l.href}
-                className={
-                  "text-sm font-medium transition-colors " +
-                  (l.highlight
-                    ? "text-sky-500 hover:text-sky-400"
-                    : "text-slate-300 hover:text-slate-100")
-                }
-              >
-                {l.label}
-              </Link>
-            </li>
-          ))}
+          {navLinks.map((l) => {
+            const active = isActive(l.href);
+            return (
+              <li key={l.href}>
+                <Link
+                  href={l.href}
+                  className={
+                    "text-sm font-medium transition-colors " +
+                    (active
+                      ? "text-sky-400"
+                      : "text-slate-300 hover:text-slate-100")
+                  }
+                >
+                  {l.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         {/* CTA (desktop) */}
@@ -85,46 +96,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      <div
-        className={`lg:hidden overflow-hidden transition-[max-height,opacity] duration-300 ${
-          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <div className="px-4 sm:px-6 pb-4">
-          <div className="md:hidden py-2">
-            <SearchBar />
-          </div>
-
-          <ul className="mt-2 space-y-1 rounded-2xl border border-slate-700 bg-[#020617]/95 p-2 shadow-lg">
-            {navLinks.map((l) => (
-              <li key={l.href}>
-                <Link
-                  href={l.href}
-                  onClick={close}
-                  className={
-                    "block rounded-lg px-3 py-2 text-sm font-medium transition-colors " +
-                    (l.highlight
-                      ? "text-sky-400 hover:bg-slate-800"
-                      : "text-slate-200 hover:bg-slate-800")
-                  }
-                >
-                  {l.label}
-                </Link>
-              </li>
-            ))}
-            <li className="pt-1">
-              <Link
-                href="/signUp"
-                onClick={close}
-                className="block rounded-xl bg-gradient-to-r from-sky-500 to-sky-600 px-3 py-2 text-center text-sm font-semibold text-white hover:from-sky-600 hover:to-sky-700"
-              >
-                Daftar
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <NavbarResponsive open={open} close={close} />
     </nav>
   );
 };

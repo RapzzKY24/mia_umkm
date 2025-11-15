@@ -14,7 +14,9 @@ export default function UmkmPage() {
             Jelajahi berbagai UMKM lokal dengan layanan dan produk yang beragam.
           </p>
         </header>
-        <UmkmMapSection />
+        <div className="hidden md:block">
+          <UmkmMapSection />
+        </div>
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {umkmData.map((item) => (
             <UmkmCard key={item.id} item={item} />
