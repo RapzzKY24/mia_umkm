@@ -112,7 +112,7 @@ export const partners = [
     name: "WhatsApp Business",
     categoryId: "technology",
     type: "Komunikasi & Customer Service",
-    logo: "/logos/whatsapp-business.png",
+    logo: "/partners/whatsapps.webp",
     description:
       "Aplikasi chat khusus bisnis dengan katalog produk, auto-reply, dan label pelanggan.",
     benefits: [
@@ -126,7 +126,7 @@ export const partners = [
     name: "Google Maps",
     categoryId: "technology",
     type: "Lokasi & Review",
-    logo: "/logos/google-maps.png",
+    logo: "/partners/googleMaps.webp",
     description:
       "Membantu pelanggan menemukan lokasi UMKM dan membaca ulasan sebelum datang.",
     benefits: [

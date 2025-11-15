@@ -9,7 +9,7 @@ export default function PartnerCard({ partner }) {
       className="
         flex flex-col rounded-2xl border shadow-sm p-4 sm:p-5
         bg-white/90 border-slate-200
-        dark:bg-slate-900/80 dark:border-slate-800
+        dark:bg-slate-900/80 dark:border-slate-800 hover:shadow-xl hover:border-sky-300/70 dark:hover:border-sky-500/40 hover:-translate-y-1
       "
     >
       <div className="flex items-center gap-4">
@@ -18,7 +18,7 @@ export default function PartnerCard({ partner }) {
       flex items-center justify-center 
       rounded-2xl bg-slate-100 dark:bg-slate-800
       h-20 w-20 sm:h-[72px] sm:w-[72px]  
-      overflow-hidden
+      overflow-hidden hover:scale-110
     "
         >
           {partner.logo ? (
