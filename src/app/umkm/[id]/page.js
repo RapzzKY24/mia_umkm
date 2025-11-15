@@ -1,7 +1,6 @@
-import umkmData from '../../../data/umkm.json';
-import UMKMDetailClient from './UMKMDetailClient';
-import styles from './page.module.css';
-
+import { umkmData } from "../../../data/umkm";
+import UMKMDetailClient from "./UMKMDetailClient";
+import styles from "./page.module.css";
 
 export async function generateStaticParams() {
   return umkmData.map((umkm) => ({
@@ -9,10 +8,8 @@ export async function generateStaticParams() {
   }));
 }
 
-
 export default function UMKMDetailPage({ params }) {
-
-  const umkm = umkmData.find(u => u.id === params.id);
+  const umkm = umkmData.find((u) => u.id === params.id);
 
   if (!umkm) {
     return (
@@ -23,7 +20,6 @@ export default function UMKMDetailPage({ params }) {
       </div>
     );
   }
-
 
   return <UMKMDetailClient umkm={umkm} />;
 }

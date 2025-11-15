@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { Search } from "lucide-react";
+import { Cross, Search, X } from "lucide-react";
 
 export default function SearchBar() {
   const [q, setQ] = useState("");
@@ -43,7 +43,7 @@ export default function SearchBar() {
           onClick={() => setQ("")}
           className="absolute right-20 top-1/2 -translate-y-1/2 text-xs text-zinc-400 hover:text-zinc-600"
         >
-          clear
+          <X height="15" width="15" />
         </button>
       )}
       <button

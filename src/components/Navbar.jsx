@@ -6,27 +6,37 @@ import { Menu, X } from "lucide-react";
 import SearchBar from "@/components/SearchBar";
 import MobileSearch from "@/components/MobileSearch";
 import { navLinks } from "@/utils/NavLinks";
+import Button from "./Button";
+import Image from "next/image";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-white/70 backdrop-blur-sm border-b border-zinc-100">
+    <nav className="fixed inset-x-0 top-0 z-50 bg-[#020617]/90 backdrop-blur-xl border-b border-white/5">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
-        {/* Left: Logo */}
+        {/* Left: Logo + Brand */}
         <Link
           href="/"
-          className="flex items-center gap-2 shrink-0"
+          className="flex items-center gap-1 shrink-0"
           onClick={close}
         >
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-cyan-600">
-            <span className="text-xl font-bold text-white">⚡</span>
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg">
+            <Image
+              src="/vscode.png"
+              width={700}
+              height={700}
+              alt="logo south venture"
+              className="h-8 w-8 object-contain"
+            />
           </div>
-          <span className="text-xl font-bold text-gray-900">UMKM</span>
+          <span className="text-xl font-semibold text-white">
+            South venture
+          </span>
         </Link>
 
-        {/* Search */}
+        {/* Search (desktop) */}
         <div className="hidden md:block w-full max-w-lg mx-4">
           <SearchBar />
         </div>
@@ -38,10 +48,10 @@ const Navbar = () => {
               <Link
                 href={l.href}
                 className={
-                  "font-medium transition-colors " +
+                  "text-sm font-medium transition-colors " +
                   (l.highlight
-                    ? "text-sky-600 hover:text-sky-700"
-                    : "text-gray-700 hover:text-gray-900")
+                    ? "text-sky-500 hover:text-sky-400"
+                    : "text-slate-300 hover:text-slate-100")
                 }
               >
                 {l.label}
@@ -52,11 +62,8 @@ const Navbar = () => {
 
         {/* CTA (desktop) */}
         <div className="hidden lg:flex items-center gap-2">
-          <Link
-            href="/signup"
-            className="rounded-full bg-gradient-to-r from-sky-500 to-sky-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:from-sky-600 hover:to-sky-700"
-          >
-            Daftar <span className="ml-0.5">›</span>
+          <Link href="/signUp">
+            <Button title="Daftar" />
           </Link>
         </div>
 
@@ -64,12 +71,16 @@ const Navbar = () => {
         <div className="flex items-center gap-2 lg:hidden">
           <MobileSearch />
           <button
-            className="inline-flex items-center justify-center rounded-md p-2 hover:bg-zinc-100"
+            className="inline-flex items-center justify-center rounded-md p-2 hover:bg-slate-800 transition-colors"
             aria-label="Toggle menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            {open ? (
+              <X className="h-6 w-6 text-slate-100" />
+            ) : (
+              <Menu className="h-6 w-6 text-slate-100" />
+            )}
           </button>
         </div>
       </div>
@@ -85,17 +96,17 @@ const Navbar = () => {
             <SearchBar />
           </div>
 
-          <ul className="mt-2 space-y-1 rounded-2xl border border-zinc-200 bg-white/90 p-2 shadow-sm">
+          <ul className="mt-2 space-y-1 rounded-2xl border border-slate-700 bg-[#020617]/95 p-2 shadow-lg">
             {navLinks.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
                   onClick={close}
                   className={
-                    "block rounded-lg px-3 py-2 text-sm font-medium " +
+                    "block rounded-lg px-3 py-2 text-sm font-medium transition-colors " +
                     (l.highlight
-                      ? "text-sky-600 hover:bg-sky-50"
-                      : "text-gray-700 hover:bg-zinc-50")
+                      ? "text-sky-400 hover:bg-slate-800"
+                      : "text-slate-200 hover:bg-slate-800")
                   }
                 >
                   {l.label}
@@ -104,7 +115,7 @@ const Navbar = () => {
             ))}
             <li className="pt-1">
               <Link
-                href="/signup"
+                href="/signUp"
                 onClick={close}
                 className="block rounded-xl bg-gradient-to-r from-sky-500 to-sky-600 px-3 py-2 text-center text-sm font-semibold text-white hover:from-sky-600 hover:to-sky-700"
               >
