@@ -2,19 +2,26 @@
   {
     "title": "Temukan UMKM Lokal Terbaik",
     "desc": "Cari produk, jasa, dan mitra di sekitar kamu dengan cepat.",
-    "img": "/MY20GPPPP1CAROUSELL_LandingPage_EN_1950x700.jpg",
-    "cta": "Jelajahi"
+    "img": "/carousel/banner2.png"
   },
   {
     "title": "Diskon Spesial untuk Pengguna Baru",
     "desc": "Daftar sekarang, nikmatin penawaran dari ratusan UMKM.",
-    "img": "/carousel/banner1.png",
-    "cta": "Daftar Gratis"
+    "img": "/carousel/banner1.png"
   },
   {
     "title": "Insight & Tren UMKM Minggu Ini",
     "desc": "Tetap update biar gak ketinggalan peluang.",
-    "img": "/images/hero-3.jpg",
-    "cta": "Baca Berita"
+    "img": "/carousel/banner3.png"
+  },
+  {
+    "title": "Insight & Tren UMKM Minggu Ini",
+    "desc": "Tetap update biar gak ketinggalan peluang.",
+    "img": "/carousel/banner4.png"
+  },
+  {
+    "title": "Insight & Tren UMKM Minggu Ini",
+    "desc": "Tetap update biar gak ketinggalan peluang.",
+    "img": "/carousel/banner5.png"
   }
 ]
