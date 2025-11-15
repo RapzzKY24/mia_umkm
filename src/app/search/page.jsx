@@ -6,8 +6,7 @@ export default function SearchPage({ searchParams }) {
 
   const results = q
     ? umkmData.filter((item) => {
-        const combined =
-          `${item.name} ${item.category} ${item.location}`.toLowerCase();
+        const combined = `${item.name} `.toLowerCase();
         return combined.includes(q);
       })
     : [];

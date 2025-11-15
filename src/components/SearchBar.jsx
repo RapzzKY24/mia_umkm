@@ -63,7 +63,7 @@ export default function SearchBar() {
         value={q}
         onChange={(e) => setQ(e.target.value)}
         onKeyDown={(e) => e.key === "Enter" && go()}
-        placeholder="Cari UMKM, kategori, lokasi…"
+        placeholder="Cari UMKM…"
         className="w-full rounded-full border border-zinc-200 bg-white/70 px-9 py-2 text-sm text-zinc-800 outline-none placeholder:text-zinc-400 focus:border-sky-300 focus:bg-white focus:shadow-sm"
       />
 
