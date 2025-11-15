@@ -1,11 +1,15 @@
+"use client";
 import PartnerCard from "@/components/PartnerCard";
 import { partners, partnerCategories } from "@/data/partners";
+import { useFadeInOnScroll } from "@/hooks/useFadeInOnScroll";
 
 export default function MitraPage() {
+  const headerRef = useFadeInOnScroll({ y: 200 });
+  const gridRef = useFadeInOnScroll({ y: 20 });
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900 dark:bg-gray-950 dark:text-slate-100 pt-20 md:pt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
-        <header className="mb-6 md:mb-8">
+        <header className="mb-6 md:mb-8" ref={headerRef}>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-500">
             Mitra UMKM
           </p>
@@ -31,7 +35,7 @@ export default function MitraPage() {
             if (!list.length) return null;
 
             return (
-              <section key={cat.id} className="space-y-3">
+              <section key={cat.id} className="space-y-3" ref={gridRef}>
                 <div>
                   <h2 className="text-lg md:text-xl font-semibold">
                     {cat.title}

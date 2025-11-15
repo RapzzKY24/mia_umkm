@@ -2,9 +2,10 @@
 
 import UmkmCard from "@/components/UmkmCard";
 import { UmkmMapSection } from "@/components/UmkmMapSection";
-import { umkmData } from "@/data/umkm";
 import UmkmFilterCard from "@/components/UmkmFilterCard";
+import { umkmData } from "@/data/umkm";
 import { useUmkmFilter } from "@/hooks/useUmkmFilter";
+import { useFadeInOnScroll } from "@/hooks/useFadeInOnScroll";
 
 export default function UmkmPage() {
   const {
@@ -20,6 +21,9 @@ export default function UmkmPage() {
     resetFilters,
   } = useUmkmFilter(umkmData);
 
+  const headerRef = useFadeInOnScroll({ y: 200 });
+  const gridRef = useFadeInOnScroll({ y: 20 });
+
   return (
     <div
       className="min-h-screen pt-20 md:pt-24 
@@ -27,17 +31,12 @@ export default function UmkmPage() {
       dark:bg-gray-950 dark:text-slate-100"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <header className="mb-6 md:mb-8">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-500">
-            UMKM
-          </p>
-          <h1 className="mt-2 text-2xl sm:text-3xl font-bold">
-            Etalase UMKM Jakarta Selatan
+        <header ref={headerRef} className="mb-6">
+          <h1 className="text-2xl sm:text-3xl font-bold text-sky-500 ">
+            UMKM di Jakarta Selatan
           </h1>
-          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 max-w-2xl">
-            Bantu pelaku UMKM di Jakarta Selatan menjangkau lebih banyak
-            pelanggan, menerima pembayaran non-tunai, dan mengelola usahanya
-            secara digital dalam satu platform.
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+            Jelajahi berbagai UMKM lokal dengan layanan dan produk yang beragam.
           </p>
         </header>
 
@@ -60,7 +59,10 @@ export default function UmkmPage() {
           />
         </div>
 
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4">
+        <section
+          ref={gridRef}
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-4"
+        >
           {filteredAndSorted.length > 0 ? (
             filteredAndSorted.map((item) => (
               <UmkmCard key={item.id} item={item} />
