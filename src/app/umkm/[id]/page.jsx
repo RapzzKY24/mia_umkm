@@ -6,6 +6,7 @@ import { getUmkmById } from "@/utils/umkm";
 import Badge from "@/components/Badge";
 import Carousel from "@/components/Carousel";
 import { useMap } from "@/hooks/useMap";
+import Button from "@/components/Button";
 
 export default function UmkmDetailPage(props) {
   const { id } = use(props.params);
@@ -122,8 +123,11 @@ export default function UmkmDetailPage(props) {
                 itemClassName="relative min-w-full aspect-[16/9]"
               />
             </div>
+            <div className="flex gap-2 mt-2">
+              <Button title={"Nomor Telfon"} />
+              <Button title={"Email"} />
+            </div>
           </article>
-
           <aside className="lg:col-span-1 grid grid-cols-1 grid-rows-2 gap-6">
             <section
               className="
