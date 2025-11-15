@@ -1,5 +1,4 @@
 import { umkmData } from "@/data/umkm";
-import Image from "next/image";
 
 export function UmkmMapSection() {
   return (
@@ -24,12 +23,12 @@ export function UmkmMapSection() {
         "
       >
         <div className="relative aspect-[16/7] w-full">
-          <Image
-            src="/images/indo-map-cluster.png"
-            alt="Peta sebaran UMKM"
-            className="h-full w-full object-cover"
-            height={700}
-            width={1400}
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63453.518806587796!2d106.80207945000002!3d-6.2841065499999935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ec2422b0b3%3A0x39a0d0fe47404d02!2sSouth%20Jakarta%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1763202810255!5m2!1sen!2sid"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="absolute inset-0 h-full w-full border-0"
+            allowFullScreen
           />
 
           <div

@@ -1,26 +1,25 @@
 export const umkmData = [
   {
-    id: "manusia-silver",
-    name: "Manusia Silver",
-    category: "Jasa",
-    rating: "2.0/5.0",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    location: "Tebet, Jakarta Selatan",
+    id: "opor-susu",
+    name: "Opor Susu Legendaris",
+    category: "Makanan dan Minuman",
+    rating: "4.4/5.0",
+    description: "Owner gusion pembantai onic 31-5-6 Jo Wik Wik",
+    location: "Cibulan Raya,Jakarta Selatan",
     imageUrl: "/images/manusia-silver.jpeg",
-    coordinates: { lat: -6.2381, lng: 106.8286 },
+    coordinates: { lat: -6.24043, lng: 106.80852 },
     testimonials: [
       {
         quote:
           "Pelayanan cepat dan responnya ramah, cocok buat hiburan di acara komunitas.",
-        author: "Pelanggan Acara RT",
+        author: "Onic Sans",
         highlight: "Pelayanan cepat",
         highlightColor: "blue",
       },
       {
         quote:
           "Konsep living statue-nya unik, anak-anak pada senang diajak foto bareng.",
-        author: "Panitia Event Kampung",
+        author: "Ayah Udil",
         highlight: "unik",
         highlightColor: "green",
       },

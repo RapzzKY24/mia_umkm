@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { notFound } from "next/navigation";
 import { getUmkmById } from "@/utils/umkm";
 import Image from "next/image";
@@ -23,7 +23,18 @@ export default function UmkmDetailPage({ params }) {
     imageUrl,
     coordinates,
     mapsUrl,
+    testimonials,
   } = item;
+
+  const [showMap, setShowMap] = useState(false);
+
+  const embedSrc = `https://www.google.com/maps?q=${coordinates.lat},${coordinates.lng}&hl=id&z=16&output=embed`;
+
+  const externalMapsUrl =
+    mapsUrl ??
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      `${name} ${location}`
+    )}`;
 
   return (
     <div
@@ -36,13 +47,13 @@ export default function UmkmDetailPage({ params }) {
       <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
         <div
           className="
-      relative overflow-hidden rounded-2xl 
-      shadow-xl border 
-      bg-white/90 border-slate-200 
-      dark:bg-gradient-to-br dark:from-slate-800 dark:via-slate-900 dark:to-black 
-      dark:border-white/10
-      p-6 sm:p-8
-    "
+            relative overflow-hidden rounded-2xl 
+            shadow-xl border 
+            bg-white/90 border-slate-200 
+            dark:bg-gradient-to-br dark:from-slate-800 dark:via-slate-900 dark:to-black 
+            dark:border-white/10
+            p-6 sm:p-8
+          "
         >
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div className="flex-1">
@@ -103,13 +114,12 @@ export default function UmkmDetailPage({ params }) {
                 src={imageUrl}
                 alt={name}
                 className="w-full h-56 sm:h-72 md:h-80 lg:h-96 object-cover rounded-xl shadow-md"
-                width={900}
-                height={600}
+                width={1200}
+                height={1000}
                 priority
               />
             </div>
           </article>
-
           <aside className="lg:col-span-1 grid grid-cols-1 grid-rows-2 gap-6">
             <section
               className="
@@ -123,23 +133,40 @@ export default function UmkmDetailPage({ params }) {
                 Lokasi UMKM
               </h3>
 
-              <div className="w-full flex-grow rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
-                <img
-                  src="https://placehold.co/600x400/1e293b/a0aec0?text=Google+Maps+Preview"
-                  alt="Map preview"
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative w-full flex-grow rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+                {showMap ? (
+                  <iframe
+                    src={embedSrc}
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    allowFullScreen
+                  />
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setShowMap(true)}
+                    className="flex h-full w-full items-center justify-center text-xs sm:text-sm text-slate-400"
+                  >
+                    Google Maps Preview
+                  </button>
+                )}
               </div>
 
-              <p className="text-sm text-slate-700 dark:text-slate-400 mt-4 flex items-center gap-2">
-                {coordinates.lat.toFixed(4)}, {coordinates.lng.toFixed(4)}
-                <a
-                  href={mapsUrl}
-                  target="_blank"
-                  className="text-sky-600 dark:text-blue-400 hover:underline"
-                >
-                  Lihat di Maps
-                </a>
+              <p className="text-sm text-slate-700 dark:text-slate-400 mt-4 flex items-center gap-3 flex-wrap">
+                <span>
+                  {coordinates.lat.toFixed(4)}, {coordinates.lng.toFixed(4)}
+                </span>
+
+                {externalMapsUrl && (
+                  <a
+                    href={externalMapsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sky-600 dark:text-blue-400 hover:underline text-xs"
+                  >
+                    Buka di Google Maps
+                  </a>
+                )}
               </p>
             </section>
 
@@ -156,7 +183,7 @@ export default function UmkmDetailPage({ params }) {
               </h3>
 
               <div className="space-y-4">
-                {item.testimonials?.map((t, idx) => (
+                {testimonials?.map((t, idx) => (
                   <blockquote
                     key={idx}
                     className="italic text-sm text-slate-700 dark:text-slate-300"
