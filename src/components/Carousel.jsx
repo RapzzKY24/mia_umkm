@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCarousel } from "@/hooks/useCarousel";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Carousel({
@@ -8,27 +8,13 @@ export default function Carousel({
   interval = 4000,
   className = "",
 }) {
-  const [index, setIndex] = useState(0);
-  const timerRef = useRef(null);
-  const hoverRef = useRef(false);
-
-  const next = () => setIndex((i) => (i + 1) % slides.length);
-  const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
-  const go = (i) => setIndex(i);
-
-  useEffect(() => {
-    if (!slides.length) return;
-    timerRef.current = setInterval(() => {
-      if (!hoverRef.current) next();
-    }, interval);
-    return () => clearInterval(timerRef.current);
-  }, [slides.length, interval]);
+  const { index, next, prev, go, hoverRef } = useCarousel(slides, interval);
 
   if (!slides.length) return null;
 
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-50 ${className}`}
+      className={`relative w-full overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-50 dark:bg-slate-900 ${className}`}
       onMouseEnter={() => (hoverRef.current = true)}
       onMouseLeave={() => (hoverRef.current = false)}
     >
@@ -46,7 +32,9 @@ export default function Carousel({
               alt={s.title || `slide-${i}`}
               className="absolute inset-0 h-full w-full object-cover"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
+
             <div className="relative z-10 flex h-full w-full flex-col justify-end p-6 sm:p-8 text-white">
               {s.kicker && (
                 <span className="mb-2 inline-block rounded-full bg-white/20 px-3 py-1 text-xs backdrop-blur">
@@ -66,7 +54,7 @@ export default function Carousel({
               {s.cta && s.href && (
                 <a
                   href={s.href}
-                  className="mt-4 inline-flex w-fit items-center rounded-full bg-sky-500 px-4 py-2 text-sm font-medium text-white hover:bg-sky-600"
+                  className="mt-4 inline-flex w-fit items-center rounded-full bg-sky-500 px-4 py-2 text-sm font-medium hover:bg-sky-600"
                 >
                   {s.cta}
                 </a>
@@ -75,31 +63,33 @@ export default function Carousel({
           </div>
         ))}
       </div>
-      {/* Arrows */}
+
       <button
         aria-label="Prev"
         onClick={prev}
-        className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2 shadow hover:bg-white"
+        className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-slate-800 p-2 shadow hover:bg-white dark:hover:bg-slate-700"
       >
         <ChevronLeft className="h-5 w-5" />
       </button>
+
       <button
         aria-label="Next"
         onClick={next}
-        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2 shadow hover:bg-white"
+        className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 dark:bg-slate-800 p-2 shadow hover:bg-white dark:hover:bg-slate-700"
       >
         <ChevronRight className="h-5 w-5" />
       </button>
-      {/* Dots */}
-      <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => go(i)}
-            className={`pointer-events-auto h-2.5 w-2.5 rounded-full transition ${
-              index === i ? "bg-white" : "bg-white/50 hover:bg-white/80"
+            className={`h-2.5 w-2.5 rounded-full transition ${
+              index === i
+                ? "bg-white dark:bg-sky-400"
+                : "bg-white/50 dark:bg-slate-600"
             }`}
-            aria-label={`Go to slide ${i + 1}`}
           />
         ))}
       </div>

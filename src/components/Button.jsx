@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ title, onClick }) => {
+const Button = ({ title }) => {
   return (
     <button
       className=" bg-blue-600 text-white
@@ -9,14 +9,16 @@ const Button = ({ title, onClick }) => {
               px-4
               rounded-xl
               shadow-md
-              hover:bg-blue-700
+              hover:bg-sky-500
               hover:scale-105
               focus:outline-none
               focus:ring-2
               focus:ring-blue-400
               focus:ring-offset-2
               transition-all
-              duration-300"
+              duration-300
+              w-full
+              "
     >
       {title}
     </button>
