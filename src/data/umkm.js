@@ -2,7 +2,7 @@ export const umkmData = [
   {
     id: "opor-susu",
     name: "Opor Susu Legendaris",
-    category: "Makanan dan Minuman",
+    category: "Makanan & Minuman",
     rating: "4.4/5.0",
     description: "Owner gusion pembantai onic 31-5-6 Jo Wik Wik",
     location: "Cibulan Raya,Jakarta Selatan",
@@ -58,440 +58,535 @@ export const umkmData = [
     ],
   },
   {
-    id: "bakso-legend-mas-joni",
-    name: "Bakso Legend Mas Joni",
-    category: "Makanan & Minuman",
-    rating: "4.8/5.0",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d",
-    location: "Blok M, Jakarta Selatan",
-    imageUrl: "/pictUmkm/bakso.jpg",
-    images: [
-      "/pictUmkm/opor-1.jpg",
-      "/pictUmkm/opor-2.jpg",
-      "/pictUmkm/opor-3.jpg",
-    ],
-    coordinates: { lat: -6.2447, lng: 106.8 },
-    testimonials: [
-      {
-        quote:
-          "Baksonya padat daging, kuahnya gurih tapi nggak bikin eneg, nagih parah.",
-        author: "Pencinta Bakso",
-        highlight: "nagih parah",
-        highlightColor: "green",
-      },
-      {
-        quote:
-          "Sudah langganan dari dulu, tiap lewat Blok M pasti mampir sini.",
-        author: "Driver Online",
-        highlight: "Sudah langganan dari dulu",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  {
-    id: "potong-rambut-kekinian",
-    name: "Potong Rambut Kekinian",
-    category: "Jasa",
-    rating: "3.9/5.0",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d",
-    location: "Pondok Indah, Jakarta Selatan",
-    imageUrl: "/images/potong-rambut.jpeg",
-    coordinates: { lat: -6.2687, lng: 106.7836 },
-    testimonials: [
-      {
-        quote:
-          "Stylist-nya ngerti model rambut kekinian, tinggal tunjuk foto langsung paham.",
-        author: "Anak Kuliah",
-        highlight: "ngerti model rambut kekinian",
-        highlightColor: "blue",
-      },
-      {
-        quote:
-          "Tempatnya kecil tapi bersih, booking dulu biar nggak nunggu lama.",
-        author: "Karyawan Kantor",
-        highlight: "bersih",
-        highlightColor: "green",
-      },
-    ],
-  },
-  {
-    id: "toko-roti-ibu-ani",
-    name: "Toko Roti Ibu Ani",
-    category: "Makanan & Minuman",
-    rating: "4.2/5.0",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d",
-    location: "Cilandak, Jakarta Selatan",
-    imageUrl: "/images/toko-roti.jpeg",
-    coordinates: { lat: -6.2917, lng: 106.7932 },
-    testimonials: [
-      {
-        quote:
-          "Rotinya selalu fresh, paling favorit roti sobek dan roti isi coklat.",
-        author: "Ibu Rumah Tangga",
-        highlight: "selalu fresh",
-        highlightColor: "blue",
-      },
-      {
-        quote:
-          "Cocok buat sarapan atau bekal anak sekolah, rasanya homy banget.",
-        author: "Guru SD",
-        highlight: "rasanya homy banget",
-        highlightColor: "green",
-      },
-    ],
-  },
-
-  // 6
-  {
-    id: "laundry-bersih-ceria",
-    name: "Laundry Bersih Ceria",
-    category: "Jasa",
-    rating: "4.1/5.0",
-    description:
-      "Layanan laundry kiloan dengan proses cepat dan wangi, cocok untuk mahasiswa dan keluarga.",
-    location: "Tebet, Jakarta Selatan",
-    imageUrl: "/images/laundry-bersih-ceria.jpeg",
-    coordinates: { lat: -6.2245, lng: 106.8541 },
-    testimonials: [
-      {
-        quote: "Cucian selalu rapi dan wangi, selesai sesuai estimasi waktu.",
-        author: "Mahasiswa Kos",
-        highlight: "rapi dan wangi",
-        highlightColor: "blue",
-      },
-      {
-        quote:
-          "Staff-nya ramah dan bisa request lipatan khusus buat kemeja kantor.",
-        author: "Karyawan Swasta",
-        highlight: "Staff-nya ramah",
-        highlightColor: "green",
-      },
-    ],
-  },
-  // 7
-  {
-    id: "angkringan-malam-jaksel",
-    name: "Angkringan Malam Jaksel",
-    category: "Makanan & Minuman",
-    rating: "4.3/5.0",
-    description:
-      "Angkringan dengan menu nasi kucing, sate-satean, dan wedang hangat di sudut Jakarta Selatan.",
-    location: "Pasar Minggu, Jakarta Selatan",
-    imageUrl: "/images/angkringan-malam.jpeg",
-    coordinates: { lat: -6.2871, lng: 106.8429 },
-    testimonials: [
-      {
-        quote:
-          "Suasananya santai, cocok buat nongkrong murah meriah bareng teman.",
-        author: "Anak Komunitas",
-        highlight: "nongkrong murah meriah",
-        highlightColor: "green",
-      },
-      {
-        quote: "Nasi kucingnya mirip kayak di Jogja, nagih.",
-        author: "Perantau Jawa",
-        highlight: "mirip kayak di Jogja",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 8
-  {
-    id: "studio-foto-lentera",
-    name: "Studio Foto Lentera",
-    category: "Jasa",
-    rating: "4.6/5.0",
-    description:
-      "Studio foto keluarga dan wisuda dengan paket terjangkau dan editing rapi.",
-    location: "Kebayoran Baru, Jakarta Selatan",
-    imageUrl: "/pictUmkm/studi.png",
-    coordinates: { lat: -6.2433, lng: 106.8008 },
-    testimonials: [
-      {
-        quote:
-          "Fotografer sabar banget ngarahin gaya keluarga besar, hasilnya kece.",
-        author: "Keluarga Besar Andini",
-        highlight: "hasilnya kece",
-        highlightColor: "green",
-      },
-      {
-        quote:
-          "Foto wisuda jadi terlihat rapi dan cerah, cocok buat upload di sosmed.",
-        author: "Fresh Graduate",
-        highlight: "cocok buat upload",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 9
-  {
-    id: "barbershop-urban-cut",
-    name: "Barbershop Urban Cut",
-    category: "Jasa",
-    rating: "4.4/5.0",
-    description:
-      "Barbershop dengan konsep modern, menyediakan hair styling dan perawatan rambut pria.",
-    location: "Kemang, Jakarta Selatan",
-    imageUrl: "/images/barbershop-urban-cut.jpeg",
-    coordinates: { lat: -6.2654, lng: 106.8201 },
-    testimonials: [
-      {
-        quote:
-          "Kapsternya detail, sebelum motong selalu tanya model dulu sampai yakin.",
-        author: "Karyawan Startup",
-        highlight: "Kapsternya detail",
-        highlightColor: "blue",
-      },
-      {
-        quote: "Tempatnya nyaman, ada minuman gratis dan musiknya enak.",
-        author: "Content Creator",
-        highlight: "Tempatnya nyaman",
-        highlightColor: "green",
-      },
-    ],
-  },
-  // 10
-  {
-    id: "soto-betawi-mak-eni",
-    name: "Soto Betawi Mak Eni",
-    category: "Makanan & Minuman",
-    rating: "4.7/5.0",
-    description:
-      "Soto Betawi dengan kuah santan gurih dan daging empuk khas rumahan.",
-    location: "Pancoran, Jakarta Selatan",
-    imageUrl: "/pictUmkm/soto.jpg",
-    coordinates: { lat: -6.2492, lng: 106.8547 },
-    testimonials: [
-      {
-        quote:
-          "Kuah sotonya kental dan bumbunya berasa, porsinya pas buat makan siang.",
-        author: "Pekerja Kantor",
-        highlight: "bumbunya berasa",
-        highlightColor: "green",
-      },
-      {
-        quote: "Tempatnya sederhana tapi rasa sotonya juara banget.",
-        author: "Food Blogger",
-        highlight: "sotonya juara",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 11
-  {
-    id: "toko-bunga-lily-garden",
-    name: "Toko Bunga Lily Garden",
-    category: "Jasa",
-    rating: "4.3/5.0",
-    description:
-      "Toko bunga yang menyediakan buket, papan bunga, dan dekorasi event.",
-    location: "Cilandak, Jakarta Selatan",
-    imageUrl: "/images/toko-bunga-lily-garden.jpeg",
-    coordinates: { lat: -6.2945, lng: 106.8072 },
-    testimonials: [
-      {
-        quote:
-          "Buketnya rapi dan sesuai request warna, pengiriman juga tepat waktu.",
-        author: "Event Organizer",
-        highlight: "sesuai request warna",
-        highlightColor: "blue",
-      },
-      {
-        quote: "Harga masih masuk akal untuk kualitas bunga yang segar.",
-        author: "Mahasiswa",
-        highlight: "bunga yang segar",
-        highlightColor: "green",
-      },
-    ],
-  },
-  // 12
-  {
-    id: "depot-sembako-murah-jaya",
-    name: "Depot Sembako Murah Jaya",
-    category: "Retail",
-    rating: "4.0/5.0",
-    description:
-      "Toko sembako harian yang menyediakan kebutuhan pokok dengan harga bersahabat.",
-    location: "Mampang Prapatan, Jakarta Selatan",
-    imageUrl: "/images/depot-sembako-murah-jaya.jpeg",
-    coordinates: { lat: -6.2499, lng: 106.8293 },
-    testimonials: [
-      {
-        quote:
-          "Lengkap untuk belanja bulanan, nggak perlu ke supermarket besar.",
-        author: "Ibu Rumah Tangga",
-        highlight: "Lengkap untuk belanja bulanan",
-        highlightColor: "blue",
-      },
-      {
-        quote: "Biasanya ada promo minyak atau beras tiap akhir pekan.",
-        author: "Warga Kompleks",
-        highlight: "promo minyak atau beras",
-        highlightColor: "green",
-      },
-    ],
-  },
-  // 13
-  {
-    id: "jahit-kebaya-mbak-rini",
-    name: "Jahit Kebaya Mbak Rini",
-    category: "Jasa",
-    rating: "4.6/5.0",
-    description:
-      "Penjahit kebaya dan dress formal khusus acara wisuda, lamaran, dan kondangan.",
-    location: "Tebet, Jakarta Selatan",
-    imageUrl: "/pictUmkm/kebaya.jpg",
-    coordinates: { lat: -6.2321, lng: 106.8549 },
-    testimonials: [
-      {
-        quote:
-          "Detail payetnya rapi, kebaya pas di badan dan nyaman dipakai seharian.",
-        author: "Calon Pengantin",
-        highlight: "Detail payetnya rapi",
-        highlightColor: "green",
-      },
-      {
-        quote:
-          "Bisa konsultasi model dulu, dikasih saran yang cocok sama bentuk badan.",
-        author: "Mahasiswi Wisuda",
-        highlight: "dikasih saran yang cocok",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 14
-  {
-    id: "warung-mie-ayam-mas-rangga",
-    name: "Warung Mie Ayam Mas Rangga",
-    category: "Makanan & Minuman",
-    rating: "4.4/5.0",
-    description:
-      "Mie ayam rumahan dengan topping ayam melimpah dan pangsit goreng renyah.",
-    location: "Jagakarsa, Jakarta Selatan",
-    imageUrl: "/images/warung-mie-ayam-mas-rangga.jpeg",
-    coordinates: { lat: -6.3324, lng: 106.8297 },
-    testimonials: [
-      {
-        quote: "Porsinya banyak, cocok buat yang lapar berat habis kuliah.",
-        author: "Mahasiswa Teknik",
-        highlight: "Porsinya banyak",
-        highlightColor: "green",
-      },
-      {
-        quote:
-          "Mie-nya kenyal dan nggak gampang lembek, sambalnya juga mantap.",
-        author: "Pencinta Mie",
-        highlight: "Mie-nya kenyal",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 15
-  {
-    id: "kedai-es-kopi-senja",
-    name: "Kedai Es Kopi Senja",
-    category: "Makanan & Minuman",
-    rating: "4.3/5.0",
-    description:
-      "Kedai kecil dengan menu es kopi susu dan camilan ringan untuk teman ngobrol.",
-    location: "Pondok Labu, Jakarta Selatan",
-    imageUrl: "/images/kedai-es-kopi-senja.jpeg",
-    coordinates: { lat: -6.3111, lng: 106.8005 },
-    testimonials: [
-      {
-        quote:
-          "Es kopinya manisnya pas, nggak bikin eneg dan harga masih bersahabat.",
-        author: "Mahasiswi",
-        highlight: "manisnya pas",
-        highlightColor: "green",
-      },
-      {
-        quote: "Tempatnya kecil tapi homey, enak buat nugas bentar.",
-        author: "Freelancer",
-        highlight: "homey",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 16
-  {
-    id: "bengkel-motor-jaya-abadi",
-    name: "Bengkel Motor Jaya Abadi",
-    category: "Jasa",
-    rating: "3.8/5.0",
-    description:
-      "Bengkel motor harian yang melayani servis ringan sampai berat.",
-    location: "Pasar Minggu, Jakarta Selatan",
-    imageUrl: "/images/bengkel-motor-jaya-abadi.jpeg",
-    coordinates: { lat: -6.2889, lng: 106.8472 },
-    testimonials: [
-      {
-        quote: "Mekaniknya komunikatif, jelasin kerusakan dengan bahasa awam.",
-        author: "Driver Ojol",
-        highlight: "Mekaniknya komunikatif",
-        highlightColor: "blue",
-      },
-      {
-        quote: "Harga servis standar, nggak terasa di-mark up berlebihan.",
-        author: "Karyawan Kantor",
-        highlight: "Harga servis standar",
-        highlightColor: "green",
-      },
-    ],
-  },
-  // 17
-  {
-    id: "taman-bacaan-lentera-anak",
-    name: "Taman Bacaan Lentera Anak",
-    category: "Pendidikan",
-    rating: "4.9/5.0",
-    description:
-      "Ruang baca dan belajar untuk anak-anak dengan koleksi buku cerita dan aktivitas kreatif.",
-    location: "Cipete, Jakarta Selatan",
-    imageUrl: "/pictUmkm/lentera.jpg",
-    coordinates: { lat: -6.2783, lng: 106.8001 },
-    testimonials: [
-      {
-        quote: "Anak-anak betah baca dan ikut kelas menggambar di sini.",
-        author: "Orang Tua Murid",
-        highlight: "betah baca",
-        highlightColor: "green",
-      },
-      {
-        quote:
-          "Pengelolanya ramah dan sering bikin kegiatan seru tiap akhir pekan.",
-        author: "Relawan",
-        highlight: "kegiatan seru",
-        highlightColor: "blue",
-      },
-    ],
-  },
-  // 18
-  {
-    id: "katering-rumahan-bu-sari",
-    name: "Katering Rumahan Bu Sari",
+    id: "mbok-ndoro-mbloc",
+    name: "Mbok Ndoro",
     category: "Makanan & Minuman",
     rating: "4.5/5.0",
     description:
-      "Layanan katering rumahan untuk acara kecil, arisan, dan makan siang kantor.",
-    location: "Kalibata, Jakarta Selatan",
-    imageUrl: "/images/katering-rumahan-bu-sari.jpeg",
-    coordinates: { lat: -6.2527, lng: 106.8559 },
+      "Restoran masakan Jawa otentik yang berlokasi di M Bloc Space, menyajikan menu rumahan.",
+    location: "M BLOC SPACE Jl. Sisingsmangaraja 37 AH, Jakarta Selatan",
+    imageUrl: "/pictUmkm/mbok-ndoro.jpg",
+    images: [],
+    coordinates: { lat: -6.2263, lng: 106.8 },
     testimonials: [
       {
-        quote: "Menu prasmanannya variatif dan rasanya konsisten enak.",
-        author: "Panitia Arisan",
-        highlight: "variatif",
+        quote:
+          "Tempatnya asik banget buat nongkrong di M Bloc, nasi langginya juara.",
+        author: "Pengunjung M Bloc",
+        highlight: "nasi langginya juara",
+        highlightColor: "green",
+      },
+      {
+        quote: "Vibes-nya Jawa banget, makanannya enak dan harganya oke.",
+        author: "Karyawan",
+        highlight: "Vibes-nya Jawa banget",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "bakso-pak-mijan",
+    name: "Bakso Pak Mijan",
+    category: "Makanan & Minuman",
+    rating: "4.6/5.0",
+    description:
+      "Bakso gerobakan legendaris di area Bulungan, terkenal dengan bakso urat dan kuahnya.",
+    location: "No Jl. Bulungan No.4 6, RT.6/RW.7, Kramat Pela, Jakarta Selatan",
+    imageUrl: "/pictUmkm/bakso-pak-mijan.jpg",
+    images: [],
+    coordinates: { lat: -6.2415, lng: 106.7995 },
+    testimonials: [
+      {
+        quote: "Bakso uratnya mantap, selalu ramai pembeli. Kuahnya gurih pas.",
+        author: "Pencinta Bakso",
+        highlight: "Bakso uratnya mantap",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Harga kaki lima, rasa bintang lima. Wajib coba kalau ke Bulungan.",
+        author: "Anak Jaksel",
+        highlight: "Harga kaki lima",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "warung-bu-vesti-barito",
+    name: "Warung Bu Vesti Barito",
+    category: "Makanan & Minuman",
+    rating: "4.4/5.0",
+    description:
+      "Warung makan masakan rumahan (warteg) dengan pilihan lauk pauk yang sangat beragam.",
+    location: "Jl. Barito II No.4, RT.4/RW.4, Kramat Pela, Jakarta Selatan",
+    imageUrl: "/pictUmkm/warung-bu-vesti.jpg",
+    images: [],
+    coordinates: { lat: -6.241, lng: 106.7998 },
+    testimonials: [
+      {
+        quote:
+          "Pilihan lauknya banyak banget, sampai bingung milihnya. Enak semua.",
+        author: "Karyawan Kantor",
+        highlight: "Pilihan lauknya banyak",
         highlightColor: "blue",
       },
       {
-        quote: "Pengantarannya tepat waktu, nasi dan lauk masih hangat.",
-        author: "HR Kantor",
-        highlight: "masih hangat",
+        quote: "Solusi makan siang murah, enak, dan kenyang di daerah Barito.",
+        author: "Mahasiswa",
+        highlight: "murah, enak, dan kenyang",
         highlightColor: "green",
+      },
+    ],
+  },
+  {
+    id: "warung-taburai-kemang",
+    name: "Warung Taburai - Kemang",
+    category: "Makanan & Minuman",
+    rating: "4.5/5.0",
+    description:
+      "Restoran yang menyajikan masakan khas Manado dengan cita rasa otentik.",
+    location: "Jl. Kemang Utara No.8A, Bangka, Mampang Prpt., Jakarta Selatan",
+    imageUrl: "/pictUmkm/warung-taburai.jpg",
+    images: [],
+    coordinates: { lat: -6.261, lng: 106.8145 },
+    testimonials: [
+      {
+        quote: "Cakalang fufunya terbaik! Pedasnya pas dan ikannya wangi.",
+        author: "Pecinta Pedas",
+        highlight: "Cakalang fufunya terbaik",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Tempatnya cozy, cocok buat makan bareng keluarga. Masakan Manadonya top.",
+        author: "Keluarga",
+        highlight: "cocok buat makan bareng",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "sari-kebab",
+    name: "Sari Kebab",
+    category: "Makanan & Minuman",
+    rating: "4.3/5.0",
+    description:
+      "Kios kebab yang populer di area Kalibata, dikenal dengan isian yang padat.",
+    location:
+      "Jl. Wr. Jati Timur Raya No.33, RT.4/RW.3, Kalibata, Jakarta Selatan",
+    imageUrl: "/pictUmkm/sari-kebab.jpg",
+    images: [],
+    coordinates: { lat: -6.257, lng: 106.845 },
+    testimonials: [
+      {
+        quote: "Kebabnya tebal, isian dagingnya banyak dan sayurnya fresh.",
+        author: "Anak Kos",
+        highlight: "isian dagingnya banyak",
+        highlightColor: "green",
+      },
+      {
+        quote: "Sausnya enak, harganya juga terjangkau buat ngemil malam.",
+        author: "Warga Lokal",
+        highlight: "harganya juga terjangkau",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "bakso-88-moga-indah",
+    name: "Bakso 88 Moga Indah",
+    category: "Makanan & Minuman",
+    rating: "4.2/5.0",
+    description:
+      "Warung bakso sederhana yang menjadi favorit warga lokal di area Moga Indah.",
+    location: "Moga Indah, Jakarta Selatan",
+    imageUrl: "/pictUmkm/bakso-88.jpg",
+    images: [],
+    coordinates: { lat: -6.25384, lng: 106.822 },
+    testimonials: [
+      {
+        quote: "Bakso halusnya lembut, kuahnya ringan dan gurih.",
+        author: "Warga Kompleks",
+        highlight: "Bakso halusnya lembut",
+        highlightColor: "blue",
+      },
+      {
+        quote: "Tempatnya bersih, pelayanan cepat. Oke buat makan bakso cepat.",
+        author: "Driver Online",
+        highlight: "pelayanan cepat",
+        highlightColor: "green",
+      },
+    ],
+  },
+  {
+    id: "pisang-ijo-mertua-tebet",
+    name: "Pisang Ijo Mertua, Tebet",
+    category: "Makanan & Minuman",
+    rating: "4.6/5.0",
+    description:
+      "Dessert khas Makassar yang populer, menyajikan es pisang ijo dengan bubur sumsum lembut.",
+    location:
+      "Jl. Tebet Timur III N No.11, RT.8/RW.7, Tebet Tim., Jakarta Selatan",
+    imageUrl: "/pictUmkm/pisang-ijo-mertua.jpg",
+    images: [],
+    coordinates: { lat: -6.2295, lng: 106.8528 },
+    testimonials: [
+      {
+        quote:
+          "Pisang ijonya juara, bubur sumsumnya lembut dan manisnya pas. Selalu jadi favorit.",
+        author: "Warga Tebet",
+        highlight: "juara",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Tempatnya kecil tapi bersih, paling enak di-takeaway. Es-nya segar banget.",
+        author: "Gojek Driver",
+        highlight: "segar banget",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "kedai-mie-bangladesh-tebet",
+    name: "Kedai Mie Bangladesh Tebet",
+    category: "Makanan & Minuman",
+    rating: "4.5/5.0",
+    description:
+      "Warung mie instan kekinian yang viral dengan bumbu rempah khas Bangladesh.",
+    location:
+      "Jl. Tebet Timur II No.31, RT.6/RW.5, Tebet Tim., Jakarta Selatan",
+    imageUrl: "/pictUmkm/mie-bangladesh-tebet.jpg",
+    images: [],
+    coordinates: { lat: -6.229, lng: 106.852 },
+    testimonials: [
+      {
+        quote:
+          "Bumbunya medok banget, beda dari Indomie biasa. Pedasnya nampol, harus coba!",
+        author: "Food Vlogger",
+        highlight: "Bumbunya medok banget",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Antrinya lumayan, tapi worth it. Mie-nya nyemek dan bumbunya kaya rasa.",
+        author: "Mahasiswa",
+        highlight: "worth it",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "wafa-gembel-99-tebet",
+    name: "WAFA GEMBEL 99 TEBET TIMUR",
+    category: "Makanan & Minuman",
+    rating: "4.4/5.0",
+    description:
+      "Warung tenda pecel lele dan ayam 'gembel' yang terkenal dengan sambal pedasnya.",
+    location:
+      "Jl. Tebet Timur Dalam Raya No.25-27 1, RT.1/RW.5, Tebet Tim., Jakarta Selatan",
+    imageUrl: "/pictUmkm/wafa-gembel-99.jpg",
+    images: [],
+    coordinates: { lat: -6.2288, lng: 106.8535 },
+    testimonials: [
+      {
+        quote:
+          "Ayam gembelnya unik, digoreng kering. Sambalnya mantap, pedasnya bikin nagih.",
+        author: "Anak Kos Tebet",
+        highlight: "Sambalnya mantap",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Tempat makan pecel lele andalan kalau malam-malam lapar di Tebet.",
+        author: "Warga Lokal",
+        highlight: "andalan kalau malam-malam",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "sate-pak-min-solo-tebet",
+    name: 'Warung Sate Pak Min Solo "Sido Mampir"',
+    category: "Makanan & Minuman",
+    rating: "4.6/5.0",
+    description:
+      "Warung sate legendaris yang menyajikan sate kambing, sate ayam, dan tongseng khas Solo.",
+    location:
+      "Jl. Tebet Timur Dalam II No.49, RT.3/RW.3, Tebet Tim., Jakarta Selatan",
+    imageUrl: "/pictUmkm/sate-pak-min-solo.jpg",
+    images: [],
+    coordinates: { lat: -6.2275, lng: 106.8532 },
+    testimonials: [
+      {
+        quote:
+          "Tongsengnya medok dan daging kambingnya empuk, nggak bau prengus sama sekali.",
+        author: "Bapak-bapak",
+        highlight: "daging kambingnya empuk",
+        highlightColor: "green",
+      },
+      {
+        quote: "Sate buntelnya favorit. Bumbunya meresap dan porsinya pas.",
+        author: "Karyawan",
+        highlight: "Sate buntelnya favorit",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "bakmi-baba-ong",
+    name: "Bakmi Baba Ong",
+    category: "Makanan & Minuman",
+    rating: "4.5/5.0",
+    description:
+      "Kedai bakmi halal dengan resep kuno, menyajikan bakmi ayam kampung dan pangsit.",
+    location: "Jl. Tebet Raya No.87, Tebet Tim., Kec. Tebet, Jakarta Selatan",
+    imageUrl: "/pictUmkm/bakmi-baba-ong.jpg",
+    images: [],
+    coordinates: { lat: -6.2305, lng: 106.85 },
+    testimonials: [
+      {
+        quote:
+          "Tekstur mie-nya pas, kenyal dan kecil-kecil. Topping ayamnya berlimpah.",
+        author: "Pecinta Bakmi",
+        highlight: "Tekstur mie-nya pas",
+        highlightColor: "blue",
+      },
+      {
+        quote:
+          "Tempatnya bersih dan nuansanya vintage. Kuah kaldunya gurih banget.",
+        author: "Keluarga Muda",
+        highlight: "Kuah kaldunya gurih",
+        highlightColor: "green",
+      },
+    ],
+  },
+  {
+    id: "uncle-thrift",
+    name: "Uncle Thrift",
+    category: "Fashion",
+    rating: "4.7/5.0", // Data dari Google
+    description:
+      "Toko thrift (preloved fashion) yang menjual pakaian impor bekas berkualitas.",
+    location:
+      "Jl. Siaga Swadaya No.3 8, RT.6/RW.4, Pejaten Bar., Ps. Minggu, Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/uncle-thrift.jpg",
+    images: [],
+    coordinates: { lat: -6.2575, lng: 106.8436 }, // Data dari Google Maps
+    testimonials: [
+      {
+        quote:
+          "Barangnya branded dan harganya oke. Tempatnya agak ngumpet tapi worth it.",
+        author: "Thrift Hunter",
+        highlight: "branded dan harganya oke",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Koleksi jaket dan crewneck-nya keren-keren, sering dapet hidden gem.",
+        author: "Mahasiswa",
+        highlight: "hidden gem",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "sj-laundry-damai-raya",
+    name: "SJ Laundry & Dry Cleaning Damai Raya",
+    category: "Jasa",
+    rating: "4.6/5.0", // Data dari Google
+    description:
+      "Jasa laundry kiloan dan dry cleaning profesional dengan layanan antar-jemput.",
+    location:
+      "Jl. Damai No.3B 1, RT.1/RW.4, Pejaten Timur, Ps. Minggu, Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/sj-laundry.jpg",
+    images: [],
+    coordinates: { lat: -6.2599, lng: 106.8483 }, // Data dari Google Maps
+    testimonials: [
+      {
+        quote:
+          "Hasilnya bersih, wangi, dan setrikaannya rapi banget. Langganan!",
+        author: "Ibu Rumah Tangga",
+        highlight: "setrikaannya rapi",
+        highlightColor: "green",
+      },
+      {
+        quote: "Bisa cuci cepat (express) 1 hari jadi, sangat membantu.",
+        author: "Karyawan",
+        highlight: "Bisa cuci cepat",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "savera-laundry",
+    name: "SAVERA Laundry",
+    category: "Jasa",
+    rating: "4.5/5.0", // Data dari Google
+    description:
+      "Laundry kiloan dan satuan yang menerima cuci pakaian, boneka, dan karpet.",
+    location:
+      "Jl. Duren Tiga Selatan No.68, RT.8/RW.3, Duren Tiga, Kec. Pancoran, Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/savera-laundry.jpg",
+    images: [],
+    coordinates: { lat: -6.2483, lng: 106.8373 }, // Data dari Google Maps
+    testimonials: [
+      {
+        quote: "Harga kiloannya bersahabat, cocok buat anak kosan.",
+        author: "Anak Kos",
+        highlight: "Harga kiloannya bersahabat",
+        highlightColor: "blue",
+      },
+      {
+        quote:
+          "Pelayanannya ramah dan hasil cuciannya nggak pernah mengecewakan.",
+        author: "Warga Lokal",
+        highlight: "Pelayanannya ramah",
+        highlightColor: "green",
+      },
+    ],
+  },
+  {
+    id: "eyelash-extension-dki-jakarta",
+    name: "Eyelash Extension Dki Jakarta",
+    category: "Kecantikan",
+    rating: "4.8/5.0", // Data dari Google
+    description:
+      "Studio kecantikan khusus untuk pemasangan eyelash extension, lash lift, dan brow bomber.",
+    location: "Jl. Kemang Utara G, Bangka, Kec. Mampang Prpt., Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/eyelash-extension-dki.jpg",
+    images: [],
+    coordinates: { lat: -6.2588, lng: 106.8153 }, // Data dari Google Maps
+    testimonials: [
+      {
+        quote:
+          "Hasilnya natural tapi tetap cetar. Pengerjaannya rapi dan nggak perih.",
+        author: "Beauty Enthusiast",
+        highlight: "Hasilnya natural",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Tempatnya nyaman dan terapisnya profesional. Sudah langganan di sini.",
+        author: "Model",
+        highlight: "terapisnya profesional",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "it-support-jakarta",
+    name: "IT SUPPORT JAKARTA SERVICE CENTER KOMPUTER PANGGILAN",
+    category: "Jasa",
+    rating: "4.9/5.0", // Data dari Google
+    description:
+      "Jasa perbaikan dan maintenance komputer, laptop, dan jaringan panggilan ke rumah atau kantor.",
+    location:
+      "6, Jl. Bangka IX No.24, RT.7/RW.12, Pela Mampang, Kec. Mampang Prpt., Jakarta", // Sesuai tabel
+    imageUrl: "/pictUmkm/it-support-jakarta.jpg",
+    images: [],
+    coordinates: { lat: -6.2505, lng: 106.818 }, // Data dari Google Maps
+    testimonials: [
+      {
+        quote:
+          "Teknisinya fast response, bisa dipanggil ke rumah. Laptop kantor beres dalam sekejap.",
+        author: "Admin Kantor",
+        highlight: "fast response",
+        highlightColor: "blue",
+      },
+      {
+        quote:
+          "Sangat membantu pas laptop tiba-tiba bluescreen. Pengerjaannya jujur.",
+        author: "Mahasiswa",
+        highlight: "Pengerjaannya jujur",
+        highlightColor: "green",
+      },
+    ],
+  },
+  {
+    id: "puspita-makmur-hidroponik",
+    name: "Puspita Makmur Hidroponik",
+    category: "Agribisnis",
+    rating: "4.7/5.0", // Data dari Google
+    description:
+      "Penjual sayuran segar hasil hidroponik dan juga menyediakan bibit serta perlengkapan hidroponik.",
+    location:
+      "Jl. Kri Beruang No.5 C 1, RT.4/RW.9, Gandaria Utara, Kec. Kby. Baru, Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/puspita-hidroponik.jpg",
+    images: [],
+    coordinates: { lat: -6.2483, lng: 106.7915 }, // Data dari Google Maps
+    testimonials: [
+      {
+        quote:
+          "Sayurannya selalu segar-segar, bebas pestisida. Enak buat salad.",
+        author: "Ibu Kompleks",
+        highlight: "bebas pestisida",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Beli paket starter kit hidroponik di sini, dikasih panduan lengkap.",
+        author: "Pecinta Tanaman",
+        highlight: "dikasih panduan lengkap",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "bimbingan-belajar-visi",
+    name: "Bimbingan Belajar VISI",
+    category: "Jasa/Pendidikan",
+    rating: "4.7/5.0", // Perkiraan data Google
+    description:
+      "Bimbingan belajar legendaris di area Barito, fokus pada persiapan masuk PTN dan pemantapan materi sekolah.",
+    location:
+      "Jl. Barito II No.9, RT.8/RW.5, Kramat Pela, Kec. Kby. Baru, Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/bimbel-visi.jpg",
+    images: [],
+    coordinates: { lat: -6.2439, lng: 106.8003 }, // Perkiraan koordinat di Jl. Barito II
+    testimonials: [
+      {
+        quote:
+          "Pengajarnya berkualitas, banyak alumni UI. Metode belajarnya intensif dan efektif.",
+        author: "Alumni 2024",
+        highlight: "Pengajarnya berkualitas",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Dari dulu terkenal bimbelnya anak-anak serius. Try out-nya sangat membantu.",
+        author: "Orang Tua Murid",
+        highlight: "Try out-nya sangat membantu",
+        highlightColor: "blue",
+      },
+    ],
+  },
+  {
+    id: "micky-mocko-handicraft",
+    name: "Micky Mocko Handicraft and Needlework",
+    category: "Kerajinan",
+    rating: "4.9/5.0", // Data dari Google/Tokopedia
+    description:
+      "Toko terlengkap di Plaza Blok M untuk segala kebutuhan kerajinan tangan, sulam, rajut, dan jahit.",
+    location:
+      "Plaza Blok M, lantai 5, Jl. Bulungan no. 76, Kramat Pela, Kec. Kby. Baru, Jakarta Selatan", // Sesuai tabel
+    imageUrl: "/pictUmkm/micky-mocko.jpg",
+    images: [],
+    coordinates: { lat: -6.2445, lng: 106.8006 }, // Koordinat Plaza Blok M
+    testimonials: [
+      {
+        quote:
+          "Surganya perajin. Cari benang rajut, kain, sampai alat sulam, semua ada di sini.",
+        author: "Crafter",
+        highlight: "Surganya perajin",
+        highlightColor: "green",
+      },
+      {
+        quote:
+          "Stafnya sangat paham produk, bisa nanya-nanya dan dikasih rekomendasi yang pas.",
+        author: "Pemula Rajut",
+        highlight: "Stafnya sangat paham",
+        highlightColor: "blue",
       },
     ],
   },
