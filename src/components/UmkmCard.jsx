@@ -33,7 +33,7 @@ export default function UmkmCard({ item }) {
           "
         />
 
-        <Badge variant="subtle" color="slate" className="absolute left-2 top-2">
+        <Badge variant="solid" color="slate" className="absolute left-2 top-2">
           {item.category}
         </Badge>
 

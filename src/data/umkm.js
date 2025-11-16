@@ -9,9 +9,25 @@ export const umkmData = [
     location: "Cibulan Raya,Jakarta Selatan",
     imageUrl: "/pictUmkm/Screenshot from 2025-11-15 18-04-59.png",
     images: [
-      "/pictUmkm/opor-1.jpg",
-      "/pictUmkm/opor-2.jpg",
-      "/pictUmkm/opor-3.jpg",
+      "/pictUmkmDetail/oporSusuLegendaris2.png",
+      "/pictUmkmDetail/oporSusuLegendaris3.png",
+    ],
+    menus: [
+      {
+        name: "Opor Susu Spesial",
+        price: "Rp25.000",
+        desc: "Dengan kuah susu gurih",
+      },
+      {
+        name: "Ati Ampela",
+        price: "Rp8.000",
+        desc: "Pendamping opor favorit pelanggan",
+      },
+      {
+        name: "Paket Opor + Lontong",
+        price: "Rp30.000",
+        desc: "Opor susu + 2 potong lontong",
+      },
     ],
     coordinates: { lat: -6.24043, lng: 106.80852 },
     testimonials: [
@@ -40,6 +56,37 @@ export const umkmData = [
       "Tempat 'ngopi' santai di Kemang dengan cita rasa kopi tubruk otentik. Menyajikan biji kopi lokal pilihan dan aneka camilan rumahan.",
     location: "Kemang, Jakarta Selatan",
     imageUrl: "/pictUmkm/warungKopiPaBudi.webp",
+    images: [
+      "/pictUmkmDetail/warungKopiPaBudi2.webp",
+      "/pictUmkmDetail/warungKopiPaBudi3.webp",
+    ],
+    menus: [
+      {
+        name: "Kopi Tubruk Hitam",
+        price: "Rp10.000",
+        desc: "Kopi tubruk klasik dari biji lokal pilihan.",
+      },
+      {
+        name: "Kopi Susu",
+        price: "Rp14.000",
+        desc: "Kopi tubruk dengan campuran susu kental manis.",
+      },
+      {
+        name: "Teh Manis Panas/Dingin",
+        price: "Rp8.000",
+        desc: "Teh melati manis, cocok untuk nongkrong santai.",
+      },
+      {
+        name: "Pisang Goreng 5 pcs",
+        price: "Rp12.000",
+        desc: "Pisang goreng rumahan, partner wajib kopi.",
+      },
+      {
+        name: "Roti Bakar Cokelat Keju",
+        price: "Rp18.000",
+        desc: "Roti bakar tebal isi selai cokelat & keju parut.",
+      },
+    ],
     coordinates: { lat: -6.2625, lng: 106.8164 },
     testimonials: [
       {
@@ -67,7 +114,27 @@ export const umkmData = [
       "Masakan Jawa otentik di M Bloc. Cicipi Nasi Langgi, Gudeg Jogja, dan Sego Pecel dalam suasana M Bloc yang hype dan kekinian.",
     location: "M BLOC SPACE Jl. Sisingsmangaraja 37 AH, Jakarta Selatan",
     imageUrl: "/pictUmkm/MbokNdoro.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/MbokNdoro2.png",
+      "/pictUmkmDetail/MbokNdoro3.png",
+    ],
+    menus: [
+      {
+        name: "Nasi Langgi Komplit",
+        price: "Rp32.000",
+        desc: "Nasi langgi dengan lauk komplet khas Jawa.",
+      },
+      {
+        name: "Gudeg Jogja",
+        price: "Rp30.000",
+        desc: "Gudeg manis gurih dengan krecek dan telur.",
+      },
+      {
+        name: "Sego Pecel",
+        price: "Rp25.000",
+        desc: "Nasi pecel dengan sayur segar dan sambal kacang.",
+      },
+    ],
     coordinates: { lat: -6.2263, lng: 106.8 },
     testimonials: [
       {
@@ -95,7 +162,27 @@ export const umkmData = [
       "Bakso urat gerobakan legendaris di Bulungan. Dikenal dengan tekstur bakso yang 'kres', kuah kaldu sapi kaya rasa, dan tetelan melimpah.",
     location: "No Jl. Bulungan No.4 6, RT.6/RW.7, Kramat Pela, Jakarta Selatan",
     imageUrl: "/pictUmkm/BaksoPakMijan.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/BaksoPakMijan2.png",
+      "/pictUmkmDetail/BaksoPakMijan3.png",
+    ],
+    menus: [
+      {
+        name: "Bakso Urat Besar",
+        price: "Rp22.000",
+        desc: "Bakso urat dengan kuah kaldu sapi gurih.",
+      },
+      {
+        name: "Bakso Campur + Tetelan",
+        price: "Rp26.000",
+        desc: "Bakso halus, urat, dan tetelan sapi melimpah.",
+      },
+      {
+        name: "Mie Ayam Bakso",
+        price: "Rp24.000",
+        desc: "Mie ayam dengan tambahan 2 bakso halus.",
+      },
+    ],
     coordinates: { lat: -6.2415, lng: 106.7995 },
     testimonials: [
       {
@@ -123,7 +210,27 @@ export const umkmData = [
       "Warteg 'naik kelas' legendaris di Barito. Surga bagi pencari lauk, puluhan menu masakan rumahan disajikan frisch setiap hari.",
     location: "Jl. Barito II No.4, RT.4/RW.4, Kramat Pela, Jakarta Selatan",
     imageUrl: "/pictUmkm/WarungBuVestiBarito.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/WarungBuVestiBarito2.png",
+      "/pictUmkmDetail/WarungBuVestiBarito3.png",
+    ],
+    menus: [
+      {
+        name: "Nasi Rames Lauk 2",
+        price: "Rp22.000",
+        desc: "Nasi dengan 2 lauk dan sayur, sudah termasuk sambal.",
+      },
+      {
+        name: "Ayam Goreng + Nasi",
+        price: "Rp24.000",
+        desc: "Ayam goreng bumbu kuning, nasi, dan lalapan.",
+      },
+      {
+        name: "Ikan Bumbu Rica",
+        price: "Rp23.000",
+        desc: "Ikan goreng dengan bumbu rica pedas.",
+      },
+    ],
     coordinates: { lat: -6.241, lng: 106.7998 },
     testimonials: [
       {
@@ -151,7 +258,27 @@ export const umkmData = [
       "Cita rasa otentik Manado di jantung Kemang. Spesialis Cakalang Fufu, Tinutuan, dan aneka masakan pedas yang menggugah selera.",
     location: "Jl. Kemang Utara No.8A, Bangka, Mampang Prpt., Jakarta Selatan",
     imageUrl: "/pictUmkm/WarungTaburai.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/WarungTaburai2.png",
+      "/pictUmkmDetail/WarungTaburai3.png",
+    ],
+    menus: [
+      {
+        name: "Cakalang Fufu Rica-Rica",
+        price: "Rp38.000",
+        desc: "Cakalang asap khas Manado dengan sambal rica pedas.",
+      },
+      {
+        name: "Tinutuan (Bubur Manado)",
+        price: "Rp25.000",
+        desc: "Bubur sayur khas Manado, cocok untuk sarapan.",
+      },
+      {
+        name: "Perkedel Jagung",
+        price: "Rp15.000",
+        desc: "Perkedel jagung renyah, isi 4 pcs.",
+      },
+    ],
     coordinates: { lat: -6.261, lng: 106.8145 },
     testimonials: [
       {
@@ -180,7 +307,27 @@ export const umkmData = [
     location:
       "Jl. Wr. Jati Timur Raya No.33, RT.4/RW.3, Kalibata, Jakarta Selatan",
     imageUrl: "/pictUmkm/SariKebab.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/SariKebab2.png",
+      "/pictUmkmDetail/SariKebab3.png",
+    ],
+    menus: [
+      {
+        name: "Kebab Regular",
+        price: "Rp20.000",
+        desc: "Kebab daging sapi dengan sayur segar.",
+      },
+      {
+        name: "Kebab Jumbo",
+        price: "Rp27.000",
+        desc: "Ukuran besar dengan isian daging ekstra.",
+      },
+      {
+        name: "Kebab Keju",
+        price: "Rp24.000",
+        desc: "Kebab dengan tambahan keju leleh.",
+      },
+    ],
     coordinates: { lat: -6.257, lng: 106.845 },
     testimonials: [
       {
@@ -208,7 +355,27 @@ export const umkmData = [
       "Warung bakso sederhana favorit warga Moga Indah. Menawarkan bakso halus super lembut dan kuah kaldu bening yang ringan menyegarkan.",
     location: "Moga Indah, Jakarta Selatan",
     imageUrl: "/pictUmkm/Bakso88MogaIndah.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/Bakso88MogaIndah2.png",
+      "/pictUmkmDetail/Bakso88MogaIndah3.png",
+    ],
+    menus: [
+      {
+        name: "Bakso Halus Komplit",
+        price: "Rp20.000",
+        desc: "Bakso halus dengan mie, tahu, dan sayuran.",
+      },
+      {
+        name: "Bakso Halus + Urat",
+        price: "Rp23.000",
+        desc: "Campuran bakso halus dan urat dalam satu mangkuk.",
+      },
+      {
+        name: "Mie Ayam Bakso",
+        price: "Rp22.000",
+        desc: "Mie ayam dengan tambahan 2 bakso halus.",
+      },
+    ],
     coordinates: { lat: -6.25384, lng: 106.822 },
     testimonials: [
       {
@@ -237,7 +404,27 @@ export const umkmData = [
     location:
       "Jl. Tebet Timur III N No.11, RT.8/RW.7, Tebet Tim., Jakarta Selatan",
     imageUrl: "/pictUmkm/PisangIjoMertua.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/PisangIjoMertua2.png",
+      "/pictUmkmDetail/PisangIjoMertua3.png",
+    ],
+    menus: [
+      {
+        name: "Es Pisang Ijo",
+        price: "Rp22.000",
+        desc: "Pisang ijo dengan bubur sumsum dan sirup khas.",
+      },
+      {
+        name: "Es Pisang Ijo Spesial",
+        price: "Rp25.000",
+        desc: "Pisang ijo dengan topping tambahan keju dan susu.",
+      },
+      {
+        name: "Es Campur Mertua",
+        price: "Rp23.000",
+        desc: "Es campur dengan isian buah dan jeli.",
+      },
+    ],
     coordinates: { lat: -6.2295, lng: 106.8528 },
     testimonials: [
       {
@@ -260,13 +447,33 @@ export const umkmData = [
     id: "kedai-mie-bangladesh-tebet",
     name: "Kedai Mie Bangladesh Tebet",
     category: "Makanan & Minuman",
-    rating: "4.S/5.0",
+    rating: "4.5/5.0",
     description:
       "Indomie 'naik kasta' dengan bumbu rempah otentik Bangladesh. Viral karena rasa 'nyemek' dan kaya rempah yang bikin nagih.",
     location:
       "Jl. Tebet Timur II No.31, RT.6/RW.5, Tebet Tim., Jakarta Selatan",
     imageUrl: "/pictUmkm/KedaiMieBangladeshTebet.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/KedaiMieBangladeshTebet2.png",
+      "/pictUmkmDetail/KedaiMieBangladeshTebet3.png",
+    ],
+    menus: [
+      {
+        name: "Mie Bangladesh Kering",
+        price: "Rp20.000",
+        desc: "Indomie kering dengan bumbu rempah Bangladesh.",
+      },
+      {
+        name: "Mie Bangladesh Tumis Basah",
+        price: "Rp22.000",
+        desc: "Mie nyemek dengan rempah kuat dan telur setengah matang.",
+      },
+      {
+        name: "Level Pedas Ekstra",
+        price: "+Rp3.000",
+        desc: "Tambah cabai dan bumbu pedas ekstra.",
+      },
+    ],
     coordinates: { lat: -6.229, lng: 106.852 },
     testimonials: [
       {
@@ -295,7 +502,27 @@ export const umkmData = [
     location:
       "Jl. Tebet Timur Dalam Raya No.25-27 1, RT.1/RW.5, Tebet Tim., Jakarta Selatan",
     imageUrl: "/pictUmkm/WafaGembel99TebetTimur.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/WafaGembel99TebetTimur2.png",
+      "/pictUmkmDetail/WafaGembel99TebetTimur3.png",
+    ],
+    menus: [
+      {
+        name: "Pecel Lele + Nasi",
+        price: "Rp22.000",
+        desc: "Lele goreng, nasi, sambal, dan lalapan.",
+      },
+      {
+        name: "Ayam Goreng Gembel",
+        price: "Rp23.000",
+        desc: "Ayam goreng tepung garing dengan sambal khas.",
+      },
+      {
+        name: "Nasi Uduk + Ayam",
+        price: "Rp25.000",
+        desc: "Nasi uduk wangi dengan ayam goreng dan sambal.",
+      },
+    ],
     coordinates: { lat: -6.2288, lng: 106.8535 },
     testimonials: [
       {
@@ -324,7 +551,27 @@ export const umkmData = [
     location:
       "Jl. Tebet Timur Dalam II No.49, RT.3/RW.3, Tebet Tim., Jakarta Selatan",
     imageUrl: "/pictUmkm/WarungSatePakMinSolo.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/WarungSatePakMinSolo2.png",
+      "/pictUmkmDetail/WarungSatePakMinSolo3.png",
+    ],
+    menus: [
+      {
+        name: "Sate Kambing 10 Tusuk",
+        price: "Rp45.000",
+        desc: "Sate kambing empuk dengan bumbu kecap Solo.",
+      },
+      {
+        name: "Tongseng Kambing",
+        price: "Rp40.000",
+        desc: "Kuah tongseng manis gurih dengan irisan daging kambing.",
+      },
+      {
+        name: "Sate Buntel",
+        price: "Rp50.000",
+        desc: "Daging kambing cincang dibungkus lemak, khas Solo.",
+      },
+    ],
     coordinates: { lat: -6.2275, lng: 106.8532 },
     testimonials: [
       {
@@ -352,7 +599,27 @@ export const umkmData = [
       "Bakmi halal resep kuno dengan cita rasa otentik. Menggunakan mie kecil kenyal dan topping ayam kampung asli yang gurih.",
     location: "Jl. Tebet Raya No.87, Tebet Tim., Kec. Tebet, Jakarta Selatan",
     imageUrl: "/pictUmkm/BakmiBabaOng.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/BakmiBabaOng2.png",
+      "/pictUmkmDetail/BakmiBabaOng3.png",
+    ],
+    menus: [
+      {
+        name: "Bakmi Ayam Kampung",
+        price: "Rp28.000",
+        desc: "Bakmi kecil kenyal dengan topping ayam kampung.",
+      },
+      {
+        name: "Bakmi Ayam + Pangsit Rebus",
+        price: "Rp32.000",
+        desc: "Bakmi ayam lengkap dengan 4 pangsit rebus.",
+      },
+      {
+        name: "Pangsit Goreng",
+        price: "Rp18.000",
+        desc: "Pangsit goreng renyah isi ayam cincang.",
+      },
+    ],
     coordinates: { lat: -6.2305, lng: 106.85 },
     testimonials: [
       {
@@ -381,7 +648,24 @@ export const umkmData = [
     location:
       "Jl. Siaga Swadaya No.3 8, RT.6/RW.4, Pejaten Bar., Ps. Minggu, Jakarta Selatan",
     imageUrl: "/pictUmkm/UncleThrift.png",
-    images: [],
+    images: ["/pictUmkmDetail/UncleThrift2.png"],
+    menus: [
+      {
+        name: "Jaket Branded Preloved",
+        price: "Mulai Rp120.000",
+        desc: "Jaket impor preloved kondisi bagus.",
+      },
+      {
+        name: "Crewneck / Sweater",
+        price: "Mulai Rp90.000",
+        desc: "Crewneck dan sweater tebal untuk daily outfit.",
+      },
+      {
+        name: "Kemeja Unik",
+        price: "Mulai Rp70.000",
+        desc: "Kemeja motif unik, satuan, jarang kembar.",
+      },
+    ],
     coordinates: { lat: -6.2575, lng: 106.8436 },
     testimonials: [
       {
@@ -410,7 +694,29 @@ export const umkmData = [
     location:
       "Jl. Damai No.3B 1, RT.1/RW.4, Pejaten Timur, Ps. Minggu, Jakarta Selatan",
     imageUrl: "/pictUmkm/SJLaundry.png",
-    images: [],
+    images: ["/pictUmkmDetail/SJLaundry2.png"],
+    menus: [
+      {
+        name: "Laundry Kiloan Reguler",
+        price: "Rp7.000 / kg",
+        desc: "Cuci, kering, lipat. Selesai 2–3 hari.",
+      },
+      {
+        name: "Laundry Express",
+        price: "Rp10.000 / kg",
+        desc: "Cuci, kering, lipat. Selesai di hari yang sama.",
+      },
+      {
+        name: "Dry Cleaning Jas",
+        price: "Rp40.000 / pcs",
+        desc: "Dry cleaning untuk jas, blazer, atau kebaya.",
+      },
+      {
+        name: "Antar-Jemput Laundry",
+        price: "Mulai Rp10.000",
+        desc: "Layanan pick-up & delivery sekitar Pejaten.",
+      },
+    ],
     coordinates: { lat: -6.2599, lng: 106.8483 },
     testimonials: [
       {
@@ -439,7 +745,29 @@ export const umkmData = [
     location:
       "Jl. Duren Tiga Selatan No.68, RT.8/RW.3, Duren Tiga, Kec. Pancoran, Jakarta Selatan",
     imageUrl: "/pictUmkm/SaveraLaundry.png",
-    images: [],
+    images: ["/pictUmkmDetail/SaveraLaundry2.png"],
+    menus: [
+      {
+        name: "Laundry Kiloan Ekonomis",
+        price: "Rp6.000 / kg",
+        desc: "Cuci dan kering, cocok untuk cucian harian anak kos.",
+      },
+      {
+        name: "Laundry Kiloan Reguler",
+        price: "Rp7.500 / kg",
+        desc: "Cuci, kering, lipat. Selesai 2 hari.",
+      },
+      {
+        name: "Cuci Karpet",
+        price: "Mulai Rp20.000 / m²",
+        desc: "Cuci karpet rumah atau kantor.",
+      },
+      {
+        name: "Cuci Boneka",
+        price: "Mulai Rp15.000 / pcs",
+        desc: "Cuci boneka ukuran kecil–sedang.",
+      },
+    ],
     coordinates: { lat: -6.2483, lng: 106.8373 },
     testimonials: [
       {
@@ -467,7 +795,32 @@ export const umkmData = [
       "Bangun tidur langsung cantik! Studio 'eyelash extension' premium di Kemang. Pengerjaan detail, higienis, dan hasil natural.",
     location: "Jl. Kemang Utara G, Bangka, Kec. Mampang Prpt., Jakarta Selatan",
     imageUrl: "/pictUmkm/EyelashExtension.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/EyelashExtension2.png",
+      "/pictUmkmDetail/EyelashExtension3.png",
+    ],
+    menus: [
+      {
+        name: "Classic Lash Extension",
+        price: "Rp250.000",
+        desc: "Tampilan natural, cocok untuk daily look.",
+      },
+      {
+        name: "Volume Lash Extension",
+        price: "Rp350.000",
+        desc: "Lebih tebal dan dramatis untuk tampilan glam.",
+      },
+      {
+        name: "Lash Lift + Tint",
+        price: "Rp280.000",
+        desc: "Melentikkan bulu mata asli tanpa extension.",
+      },
+      {
+        name: "Touch Up 2 Minggu",
+        price: "Rp150.000",
+        desc: "Perapihan dan penambahan bulu mata yang rontok.",
+      },
+    ],
     coordinates: { lat: -6.2588, lng: 106.8153 },
     testimonials: [
       {
@@ -496,7 +849,24 @@ export const umkmData = [
     location:
       "6, Jl. Bangka IX No.24, RT.7/RW.12, Pela Mampang, Kec. Mampang Prpt., Jakarta",
     imageUrl: "/pictUmkm/ITSUPPORTJAKARTA.png",
-    images: [],
+    images: ["/pictUmkmDetail/ITSUPPORTJAKARTA2.png"],
+    menus: [
+      {
+        name: "Install Ulang Windows",
+        price: "Rp250.000",
+        desc: "Termasuk backup data dasar dan instalasi driver.",
+      },
+      {
+        name: "Optimasi & Pembersihan Virus",
+        price: "Rp300.000",
+        desc: "Scan malware, bersih-bersih sistem, dan tuning performa.",
+      },
+      {
+        name: "Servis Panggilan Kantor/Rumah",
+        price: "Mulai Rp200.000 / kunjungan",
+        desc: "Biaya jasa teknisi di lokasi, belum termasuk spare part.",
+      },
+    ],
     coordinates: { lat: -6.2505, lng: 106.818 },
     testimonials: [
       {
@@ -525,7 +895,24 @@ export const umkmData = [
     location:
       "Jl. Kri Beruang No.5 C 1, RT.4/RW.9, Gandaria Utara, Kec. Kby. Baru, Jakarta Selatan",
     imageUrl: "/pictUmkm/PuspitaMakmurHidroponik.png",
-    images: [],
+    images: ["/pictUmkmDetail/PuspitaMakmurHidroponik2.png"],
+    menus: [
+      {
+        name: "Selada Hidroponik",
+        price: "Rp18.000 / ikat",
+        desc: "Selada segar bebas pestisida, cocok untuk salad.",
+      },
+      {
+        name: "Pakcoy Hidroponik",
+        price: "Rp16.000 / ikat",
+        desc: "Pakcoy hijau segar untuk tumisan.",
+      },
+      {
+        name: "Starter Kit Hidroponik",
+        price: "Rp350.000",
+        desc: "Paket lengkap pemula: netpot, nutrisi, dan media tanam.",
+      },
+    ],
     coordinates: { lat: -6.2483, lng: 106.7915 },
     testimonials: [
       {
@@ -554,7 +941,27 @@ export const umkmData = [
     location:
       "Jl. Barito II No.9, RT.8/RW.5, Kramat Pela, Kec. Kby. Baru, Jakarta Selatan",
     imageUrl: "/pictUmkm/BimbinganBelajarVISI.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/BimbinganBelajarVISI2.png",
+      "/pictUmkmDetail/BimbinganBelajarVISI3.png",
+    ],
+    menus: [
+      {
+        name: "Paket Intensif UTBK",
+        price: "Rp2.500.000 / semester",
+        desc: "Kelas intensif persiapan UTBK dengan try out rutin.",
+      },
+      {
+        name: "Kelas Reguler SMA",
+        price: "Rp900.000 / bulan",
+        desc: "Pendalaman materi untuk kelas 10–12.",
+      },
+      {
+        name: "Try Out Mandiri",
+        price: "Rp150.000 / sesi",
+        desc: "Try out simulasi UTBK dengan pembahasan.",
+      },
+    ],
     coordinates: { lat: -6.2439, lng: 106.8003 },
     testimonials: [
       {
@@ -583,7 +990,27 @@ export const umkmData = [
     location:
       "Plaza Blok M, lantai 5, Jl. Bulungan no. 76, Kramat Pela, Kec. Kby. Baru, Jakarta Selatan",
     imageUrl: "/pictUmkm/MickyMockoHandicraft.png",
-    images: [],
+    images: [
+      "/pictUmkmDetail/MickyMockoHandicraft2.png",
+      "/pictUmkmDetail/MickyMockoHandicraft3.png",
+    ],
+    menus: [
+      {
+        name: "Benang Rajut Impor",
+        price: "Mulai Rp35.000 / gulung",
+        desc: "Berbagai pilihan warna dan tekstur.",
+      },
+      {
+        name: "Set Alat Sulam Starter",
+        price: "Rp120.000",
+        desc: "Paket hoop, jarum, kain, dan benang sulam.",
+      },
+      {
+        name: "Kain Kanvas Lukis",
+        price: "Mulai Rp40.000",
+        desc: "Kanvas siap pakai untuk melukis atau sulam.",
+      },
+    ],
     coordinates: { lat: -6.2445, lng: 106.8006 },
     testimonials: [
       {
