@@ -3,10 +3,34 @@ import UmkmCard from "@/components/UmkmCard";
 import { umkmData } from "@/data/umkm";
 import slides from "@/data/slides.json";
 import ServiceCard from "@/components/ServiceCard";
-import { HandCoins, Search, Store } from "lucide-react";
+import { Lightbulb, Handshake, LayoutList, Compass, LayoutGrid, Users, Search } from "lucide-react"; //icon baru
 import Link from "next/link";
 import { getTopRatedUmkm } from "@/utils/umkm";
 import Button from "@/components/Button";
+
+function MissionCard({ icon, title, description }) {
+  return (
+    <div
+      className="
+        flex flex-col items-center text-center p-6 rounded-2xl border shadow-sm
+        bg-white/90 border-slate-200
+        dark:bg-slate-900/80 dark:border-slate-800
+        transition-all duration-300 hover:shadow-lg hover:border-sky-300/70 dark:hover:border-sky-500/40
+        transform hover:-translate-y-1
+      "
+    >
+      <div className="flex h-14 w-14 items-center justify-center rounded-full bg-sky-100 text-sky-600 dark:bg-sky-500/10 dark:text-sky-300 mb-4 transition-transform duration-300 hover:scale-110">
+        {icon}
+      </div>
+      <h4 className="text-base font-semibold text-slate-900 dark:text-slate-50">
+        {title}
+      </h4>
+      <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
+        {description}
+      </p>
+    </div>
+  );
+}
 
 export default function HomePage() {
   const featured = getTopRatedUmkm(umkmData, 5);
@@ -49,7 +73,7 @@ export default function HomePage() {
             <div className="mt-4 flex gap-2">
               <Link
                 href="/umkm"
-                className="flex-1 rounded-xl text-center text-xs font-semibold px-3 py-2 text-black"
+                className="flex-1 rounded-xl text-center text-xs font-semibold px-3 py-2"
               >
                 <Button title={"Liat UMKM"} />
               </Link>
@@ -64,7 +88,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Top 5 UMKM */}
       <section className="mt-12 md:mt-20">
         <div className="mx-auto w-[95%] max-w-7xl text-center">
           <h2 className="mt-2 text-xl md:text-2xl font-light text-slate-900 dark:text-slate-50">
@@ -83,6 +106,63 @@ export default function HomePage() {
 
       <div className="h-12 md:h-20" />
 
+      {/* tentang SV, visi dan misi */}
+      <section id="tentang-kami" className="mx-auto w-[95%] max-w-7xl px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+        <div className="text-center mb-10 md:mb-16">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-500">
+            South Venture
+          </p>
+          <h2 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-bold">
+            Tentang Kami
+          </h2>
+          <p className="mt-4 text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            South Venture adalah platform yang didedikasikan untuk mendukung UMKM di Jakarta Selatan. Kami percaya bahwa setiap usaha kecil memiliki potensi besar untuk berkembang dan berkontribusi pada ekonomi lokal.
+          </p>
+        </div>
+
+        {/* visi */}
+        <div className="bg-white/90 border border-slate-200 dark:bg-slate-900/80 dark:border-slate-800 rounded-3xl p-6 md:p-8 mb-10 md:mb-16 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.01]">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 text-center md:text-left">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-sky-100 text-sky-600 dark:bg-sky-500/10 dark:text-sky-300 transition-transform duration-300 hover:scale-110">
+              <Lightbulb className="h-10 w-10" />
+            </div>
+            <div>
+              <h3 className="text-xl md:text-2xl font-semibold text-slate-900 dark:text-slate-50">
+                Visi Kami
+              </h3>
+              <p className="mt-2 text-base text-slate-600 dark:text-slate-300 max-w-3xl">
+                Menjadi ruang digital yang membantu UMKM kecil berkembang, dikenal, dan mudah ditemukan oleh masyarakat luas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* misi */}
+        <div className="text-center">
+          <h3 className="text-xl md:text-2xl font-semibold text-slate-900 dark:text-slate-50 mb-6">
+            Misi Kami
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <MissionCard
+              icon={<Search className="h-8 w-8" />}
+              title="Akses Cepat & Akurat"
+              description="Menyediakan akses pencarian UMKM yang cepat, akurat, dan mudah dijangkau oleh semua pengguna."
+            />
+            <MissionCard
+              icon={<LayoutList className="h-8 w-8" />}
+              title="Identitas Digital Profesional"
+              description="Membantu UMKM membangun identitas digital melalui etalase bisnis yang informatif dan profesional."
+            />
+            <MissionCard
+              icon={<Handshake className="h-8 w-8" />}
+              title="Dukungan & Kolaborasi"
+              description="Mendukung perkembangan UMKM dengan menghadirkan sistem rating, promosi, dan peluang kolaborasi yang memperluas jangkauan mereka."
+            />
+          </div>
+        </div>
+      </section>
+
+      <div className="h-6 md:h-1  0" />
       <section className="mb-10 md:mb-16" id="service">
         <div className="mx-auto w-[95%] max-w-7xl text-center">
           <h2 className="text-xl md:text-2xl font-light text-slate-900 dark:text-slate-50">
@@ -95,17 +175,17 @@ export default function HomePage() {
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
             <ServiceCard
-              icon={<Search className="h-10 w-10" />}
+              icon={<Compass className="h-8 w-8" />}
               title="Cari Produk UMKM"
               description="Cari produk sesuai kebutuhan dengan filter kategori, lokasi, dan harga."
             />
-            <ServiceCard
-              icon={<Store className="h-10 w-10" />}
+            <ServiceCard 
+              icon={<LayoutGrid className="h-8 w-8" />}
               title="Etalase UMKM"
               description="Tampilkan produk UMKM kalian ke lebih banyak pembeli potensial."
             />
             <ServiceCard
-              icon={<HandCoins className="h-10 w-10" />}
+              icon={<Users className="h-8 w-8" />}
               title="Kolaborasi & Mitra"
               description="Hubungkan UMKM dengan mitra bisnis dan peluang kerja sama baru."
             />
