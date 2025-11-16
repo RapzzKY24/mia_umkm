@@ -10,25 +10,47 @@ export default function MobileSearch() {
   return (
     <>
       <button
-        aria-label="Open search"
+        aria-label="Buka pencarian"
         onClick={() => setOpen(true)}
-        className="md:hidden p-2 rounded-full hover:bg-zinc-100"
+        className="
+          md:hidden p-2 rounded-full
+          hover:bg-zinc-100
+          dark:hover:bg-slate-800
+        "
       >
-        <Search className="h-5 w-5" />
+        <Search className="h-5 w-5 text-slate-700 dark:text-slate-100" />
       </button>
 
       {open && (
-        <div className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm">
-          <div className="absolute left-1/2 top-10 w-[92%] -translate-x-1/2 rounded-2xl bg-white p-4 shadow-xl">
+        <div
+          className="
+            fixed inset-0 z-[60] 
+            bg-black/40 backdrop-blur-sm
+          "
+        >
+          <div
+            className="
+              absolute left-1/2 top-10 w-[92%] -translate-x-1/2
+              rounded-2xl bg-white p-4 shadow-xl
+              dark:bg-slate-900 dark:border dark:border-slate-700
+            "
+          >
             <div className="mb-3 flex items-center justify-between">
-              <h3 className="text-sm font-semibold">Cari</h3>
+              <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                Cari UMKM
+              </h3>
               <button
                 onClick={() => setOpen(false)}
-                className="rounded-full p-1 hover:bg-zinc-100"
+                className="
+                  rounded-full p-1
+                  hover:bg-zinc-100 dark:hover:bg-slate-800
+                "
+                aria-label="Tutup pencarian"
               >
-                <X className="h-5 w-5" />
+                <X className="h-5 w-5 text-slate-700 dark:text-slate-100" />
               </button>
             </div>
+
             <SearchBar />
           </div>
         </div>

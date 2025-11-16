@@ -1,18 +1,19 @@
 "use client";
 
-import React, { use } from "react";
-import { notFound } from "next/navigation";
-import { getUmkmById } from "@/utils/umkm";
 import Badge from "@/components/Badge";
 import Carousel from "@/components/Carousel";
-import { useMap } from "@/hooks/useMap";
 import Button from "@/components/Button";
+import { getUmkmById } from "@/utils/umkm";
+import { useMap } from "@/hooks/useMap";
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
+import { use } from "react";
 
 export default function UmkmDetailPage(props) {
   const { id } = use(props.params);
 
   const item = getUmkmById(id);
-
   if (!item) return notFound();
 
   const {
@@ -50,7 +51,26 @@ export default function UmkmDetailPage(props) {
         dark:bg-gray-950 dark:text-slate-100
       "
     >
+      {/* HEADER */}
       <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24">
+        {/* Tombol back */}
+        <div className="mb-4">
+          <Link
+            href="/umkm"
+            className="
+              inline-flex items-center gap-2 rounded-full
+              border border-slate-200 bg-white/90 px-3 py-1.5 text-xs font-medium text-slate-700
+              hover:bg-slate-100
+
+              dark:bg-slate-900/70 dark:border-slate-700 dark:text-slate-100
+              dark:hover:bg-slate-800
+            "
+          >
+            <ArrowLeft className="h-4 w-4" />
+            <span>Kembali ke daftar UMKM</span>
+          </Link>
+        </div>
+
         <div
           className="
             relative overflow-hidden rounded-2xl 
@@ -80,8 +100,10 @@ export default function UmkmDetailPage(props) {
         </div>
       </header>
 
+      {/* MAIN */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          {/* KOLom kiri: konten utama */}
           <article
             className="
               lg:col-span-3 rounded-2xl shadow-lg border
@@ -123,12 +145,16 @@ export default function UmkmDetailPage(props) {
                 itemClassName="relative min-w-full aspect-[16/9]"
               />
             </div>
+
             <div className="flex gap-2 mt-2">
-              <Button title={"Nomor Telfon"} />
-              <Button title={"Email"} />
+              <Button title="Nomor Telfon" />
+              <Button title="Email" />
             </div>
           </article>
+
+          {/* KOLom kanan: map + testimoni */}
           <aside className="lg:col-span-1 grid grid-cols-1 grid-rows-2 gap-6">
+            {/* Lokasi */}
             <section
               className="
                 rounded-2xl shadow-lg border
@@ -178,6 +204,7 @@ export default function UmkmDetailPage(props) {
               </p>
             </section>
 
+            {/* Testimoni */}
             <section
               className="
                 rounded-2xl shadow-lg border

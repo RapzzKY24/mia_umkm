@@ -39,7 +39,7 @@ export const umkmData = [
     description:
       "Tempat 'ngopi' santai di Kemang dengan cita rasa kopi tubruk otentik. Menyajikan biji kopi lokal pilihan dan aneka camilan rumahan.",
     location: "Kemang, Jakarta Selatan",
-    imageUrl: "/images/warung-kopi.jpeg",
+    imageUrl: "/pictUmkm/warungKopiPaBudi.webp",
     coordinates: { lat: -6.2625, lng: 106.8164 },
     testimonials: [
       {
@@ -66,7 +66,7 @@ export const umkmData = [
     description:
       "Masakan Jawa otentik di M Bloc. Cicipi Nasi Langgi, Gudeg Jogja, dan Sego Pecel dalam suasana M Bloc yang hype dan kekinian.",
     location: "M BLOC SPACE Jl. Sisingsmangaraja 37 AH, Jakarta Selatan",
-    imageUrl: "/pictUmkm/mbok-ndoro.jpg",
+    imageUrl: "/pictUmkm/MbokNdoro.png",
     images: [],
     coordinates: { lat: -6.2263, lng: 106.8 },
     testimonials: [
@@ -94,7 +94,7 @@ export const umkmData = [
     description:
       "Bakso urat gerobakan legendaris di Bulungan. Dikenal dengan tekstur bakso yang 'kres', kuah kaldu sapi kaya rasa, dan tetelan melimpah.",
     location: "No Jl. Bulungan No.4 6, RT.6/RW.7, Kramat Pela, Jakarta Selatan",
-    imageUrl: "/pictUmkm/bakso-pak-mijan.jpg",
+    imageUrl: "/pictUmkm/BaksoPakMijan.png",
     images: [],
     coordinates: { lat: -6.2415, lng: 106.7995 },
     testimonials: [
@@ -122,7 +122,7 @@ export const umkmData = [
     description:
       "Warteg 'naik kelas' legendaris di Barito. Surga bagi pencari lauk, puluhan menu masakan rumahan disajikan frisch setiap hari.",
     location: "Jl. Barito II No.4, RT.4/RW.4, Kramat Pela, Jakarta Selatan",
-    imageUrl: "/pictUmkm/warung-bu-vesti.jpg",
+    imageUrl: "/pictUmkm/WarungBuVestiBarito.png",
     images: [],
     coordinates: { lat: -6.241, lng: 106.7998 },
     testimonials: [
@@ -150,7 +150,7 @@ export const umkmData = [
     description:
       "Cita rasa otentik Manado di jantung Kemang. Spesialis Cakalang Fufu, Tinutuan, dan aneka masakan pedas yang menggugah selera.",
     location: "Jl. Kemang Utara No.8A, Bangka, Mampang Prpt., Jakarta Selatan",
-    imageUrl: "/pictUmkm/warung-taburai.jpg",
+    imageUrl: "/pictUmkm/WarungTaburai.png",
     images: [],
     coordinates: { lat: -6.261, lng: 106.8145 },
     testimonials: [
@@ -179,7 +179,7 @@ export const umkmData = [
       "Kebab 'sultan' di Kalibata. Bukan kebab biasa, isian dagingnya penuh, sayurnya segar, dan sausnya lumer. Jaminan puas!",
     location:
       "Jl. Wr. Jati Timur Raya No.33, RT.4/RW.3, Kalibata, Jakarta Selatan",
-    imageUrl: "/pictUmkm/sari-kebab.jpg",
+    imageUrl: "/pictUmkm/SariKebab.png",
     images: [],
     coordinates: { lat: -6.257, lng: 106.845 },
     testimonials: [
@@ -207,7 +207,7 @@ export const umkmData = [
     description:
       "Warung bakso sederhana favorit warga Moga Indah. Menawarkan bakso halus super lembut dan kuah kaldu bening yang ringan menyegarkan.",
     location: "Moga Indah, Jakarta Selatan",
-    imageUrl: "/pictUmkm/bakso-88.jpg",
+    imageUrl: "/pictUmkm/Bakso88MogaIndah.png",
     images: [],
     coordinates: { lat: -6.25384, lng: 106.822 },
     testimonials: [
@@ -236,7 +236,7 @@ export const umkmData = [
       "Manis, lembut, dan segar! Es Pisang Ijo legendaris di Tebet ini menyajikan bubur sumsum premium dan saus sirup yang pas.",
     location:
       "Jl. Tebet Timur III N No.11, RT.8/RW.7, Tebet Tim., Jakarta Selatan",
-    imageUrl: "/pictUmkm/pisang-ijo-mertua.jpg",
+    imageUrl: "/pictUmkm/PisangIjoMertua.png",
     images: [],
     coordinates: { lat: -6.2295, lng: 106.8528 },
     testimonials: [
@@ -265,7 +265,7 @@ export const umkmData = [
       "Indomie 'naik kasta' dengan bumbu rempah otentik Bangladesh. Viral karena rasa 'nyemek' dan kaya rempah yang bikin nagih.",
     location:
       "Jl. Tebet Timur II No.31, RT.6/RW.5, Tebet Tim., Jakarta Selatan",
-    imageUrl: "/pictUmkm/mie-bangladesh-tebet.jpg",
+    imageUrl: "/pictUmkm/KedaiMieBangladeshTebet.png",
     images: [],
     coordinates: { lat: -6.229, lng: 106.852 },
     testimonials: [
@@ -294,7 +294,7 @@ export const umkmData = [
       "Warung tenda pecel lele dan ayam 'gembel' yang sambalnya 'nampol' gila! Ayam garing dan sambal pedasnya jadi idola di Tebet.",
     location:
       "Jl. Tebet Timur Dalam Raya No.25-27 1, RT.1/RW.5, Tebet Tim., Jakarta Selatan",
-    imageUrl: "/pictUmkm/wafa-gembel-99.jpg",
+    imageUrl: "/pictUmkm/WafaGembel99TebetTimur.png",
     images: [],
     coordinates: { lat: -6.2288, lng: 106.8535 },
     testimonials: [
@@ -323,7 +323,7 @@ export const umkmData = [
       "Sate kambing empuk khas Solo di Tebet. Dagingnya nggak bau prengus, bumbu kecapnya meresap, dan tongsengnya juara.",
     location:
       "Jl. Tebet Timur Dalam II No.49, RT.3/RW.3, Tebet Tim., Jakarta Selatan",
-    imageUrl: "/pictUmkm/sate-pak-min-solo.jpg",
+    imageUrl: "/pictUmkm/WarungSatePakMinSolo.png",
     images: [],
     coordinates: { lat: -6.2275, lng: 106.8532 },
     testimonials: [
@@ -351,7 +351,7 @@ export const umkmData = [
     description:
       "Bakmi halal resep kuno dengan cita rasa otentik. Menggunakan mie kecil kenyal dan topping ayam kampung asli yang gurih.",
     location: "Jl. Tebet Raya No.87, Tebet Tim., Kec. Tebet, Jakarta Selatan",
-    imageUrl: "/pictUmkm/bakmi-baba-ong.jpg",
+    imageUrl: "/pictUmkm/BakmiBabaOng.png",
     images: [],
     coordinates: { lat: -6.2305, lng: 106.85 },
     testimonials: [
@@ -380,7 +380,7 @@ export const umkmData = [
       "Surga tersembunyi para 'thrift hunter'. Menjual pakaian impor preloved berkualitas, dari jaket branded, crewneck, hingga kemeja unik.",
     location:
       "Jl. Siaga Swadaya No.3 8, RT.6/RW.4, Pejaten Bar., Ps. Minggu, Jakarta Selatan",
-    imageUrl: "/pictUmkm/uncle-thrift.jpg",
+    imageUrl: "/pictUmkm/UncleThrift.png",
     images: [],
     coordinates: { lat: -6.2575, lng: 106.8436 },
     testimonials: [
@@ -409,7 +409,7 @@ export const umkmData = [
       "Solusi pakaian bersih, wangi, dan rapi di Pejaten. Melayani laundry kiloan hingga 'dry cleaning' jas dan kebaya dengan layanan antar-jemput.",
     location:
       "Jl. Damai No.3B 1, RT.1/RW.4, Pejaten Timur, Ps. Minggu, Jakarta Selatan",
-    imageUrl: "/pictUmkm/sj-laundry.jpg",
+    imageUrl: "/pictUmkm/SJLaundry.png",
     images: [],
     coordinates: { lat: -6.2599, lng: 106.8483 },
     testimonials: [
@@ -438,7 +438,7 @@ export const umkmData = [
       "Laundry kiloan andalan anak kos Duren Tiga. Harga bersahabat, pengerjaan cepat, dan hasil bersih. Menerima cuci karpet dan boneka.",
     location:
       "Jl. Duren Tiga Selatan No.68, RT.8/RW.3, Duren Tiga, Kec. Pancoran, Jakarta Selatan",
-    imageUrl: "/pictUmkm/savera-laundry.jpg",
+    imageUrl: "/pictUmkm/SaveraLaundry.png",
     images: [],
     coordinates: { lat: -6.2483, lng: 106.8373 },
     testimonials: [
@@ -466,7 +466,7 @@ export const umkmData = [
     description:
       "Bangun tidur langsung cantik! Studio 'eyelash extension' premium di Kemang. Pengerjaan detail, higienis, dan hasil natural.",
     location: "Jl. Kemang Utara G, Bangka, Kec. Mampang Prpt., Jakarta Selatan",
-    imageUrl: "/pictUmkm/eyelash-extension-dki.jpg",
+    imageUrl: "/pictUmkm/EyelashExtension.png",
     images: [],
     coordinates: { lat: -6.2588, lng: 106.8153 },
     testimonials: [
@@ -495,7 +495,7 @@ export const umkmData = [
       "Laptop 'bluescreen'? Komputer lemot? Jasa servis komputer panggilan terpercaya. Teknisi andal, jujur, dan cepat datang ke rumah/kantor.",
     location:
       "6, Jl. Bangka IX No.24, RT.7/RW.12, Pela Mampang, Kec. Mampang Prpt., Jakarta",
-    imageUrl: "/pictUmkm/it-support-jakarta.jpg",
+    imageUrl: "/pictUmkm/ITSUPPORTJAKARTA.png",
     images: [],
     coordinates: { lat: -6.2505, lng: 106.818 },
     testimonials: [
@@ -524,7 +524,7 @@ export const umkmData = [
       "Sayuran segar bebas pestisida langsung dari kebun hidroponik di Gandaria. Jual aneka selada, pakcoy, dan perlengkapan 'starter kit' hidroponik.",
     location:
       "Jl. Kri Beruang No.5 C 1, RT.4/RW.9, Gandaria Utara, Kec. Kby. Baru, Jakarta Selatan",
-    imageUrl: "/pictUmkm/puspita-hidroponik.jpg",
+    imageUrl: "/pictUmkm/PuspitaMakmurHidroponik.png",
     images: [],
     coordinates: { lat: -6.2483, lng: 106.7915 },
     testimonials: [
@@ -553,7 +553,7 @@ export const umkmData = [
       "Bimbel legendaris di Barito dengan rekam jejak puluhan tahun. Fokus persiapan intensif masuk PTN, materi mendalam, dan 'try out' berkala.",
     location:
       "Jl. Barito II No.9, RT.8/RW.5, Kramat Pela, Kec. Kby. Baru, Jakarta Selatan",
-    imageUrl: "/pictUmkm/bimbel-visi.jpg",
+    imageUrl: "/pictUmkm/BimbinganBelajarVISI.png",
     images: [],
     coordinates: { lat: -6.2439, lng: 106.8003 },
     testimonials: [
@@ -582,7 +582,7 @@ export const umkmData = [
       "Surga bagi para 'crafter' di Blok M! Toko terlengkap untuk segala kebutuhan sulam, rajut, jahit, dan aneka kerajinan tangan.",
     location:
       "Plaza Blok M, lantai 5, Jl. Bulungan no. 76, Kramat Pela, Kec. Kby. Baru, Jakarta Selatan",
-    imageUrl: "/pictUmkm/micky-mocko.jpg",
+    imageUrl: "/pictUmkm/MickyMockoHandicraft.png",
     images: [],
     coordinates: { lat: -6.2445, lng: 106.8006 },
     testimonials: [

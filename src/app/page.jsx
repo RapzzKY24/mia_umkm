@@ -88,10 +88,11 @@ export default function HomePage() {
       {/* Top 5 UMKM */}
       <section className="mt-12 md:mt-20 sv-section" id="top-umkm">
         <div className="mx-auto w-[95%] max-w-7xl text-center">
-          <h2 className="mt-2 text-xl md:text-2xl font-light text-slate-900 dark:text-slate-50">
-            Top 5 UMKM dengan Rating Tertinggi
+          <h2 className="mt-2 text-2xl font-bold md:text-2xl  text-slate-900 dark:text-slate-50">
+            <span className="text-sky-500">Top 5</span> UMKM dengan Rating
+            Tertinggi
           </h2>
-          <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+          <p className="mt-2 text-xs font-light text-slate-500 dark:text-slate-400">
             Dicari berdasarkan ulasan pelanggan & kualitas layanan terbaik.
           </p>
           <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 top-5-grid">
