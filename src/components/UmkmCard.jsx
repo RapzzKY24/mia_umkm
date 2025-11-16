@@ -9,11 +9,12 @@ export default function UmkmCard({ item }) {
     <Link
       href={`/umkm/${item.id}`}
       className="
-        group block overflow-hidden rounded-2xl border shadow-md transition-all
+        group block overflow-hidden rounded-2xl border shadow-md transition-all duration-300
         bg-white/90 border-slate-200
         hover:shadow-lg hover:border-sky-300/70
         dark:bg-slate-900/80 dark:border-slate-800
         dark:hover:shadow-xl dark:hover:border-sky-500/40
+        transform hover:-translate-y-1
       "
     >
       <div className="relative h-36 sm:h-40">
