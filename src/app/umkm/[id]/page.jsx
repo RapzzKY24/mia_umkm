@@ -268,7 +268,7 @@ export default function UmkmDetailPage(props) {
                 Lokasi UMKM
               </h3>
 
-              <div className="relative w-full flex-grow rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+              <div className="relative w-full flex-row rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
                 {showMap ? (
                   <iframe
                     src={embedSrc}
