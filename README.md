@@ -1,6 +1,3 @@
------
-
-````markdown
 # MIA UMKM - MSME Digital Directory Platform
 
 **MIA UMKM** is a modern web application designed to empower and showcase Micro, Small, and Medium Enterprises (MSMEs/UMKM). Built with **Next.js** and **Tailwind CSS**, this platform serves as a digital directory that allows users to discover local businesses, view detailed profiles, and locate them via interactive maps.
