@@ -1,47 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+-----
 
-## Getting Started
+````markdown
+# MIA UMKM - MSME Digital Directory Platform
 
-git clone https://github.com/RapzzKY24/mia_umkm.git
+**MIA UMKM** is a modern web application designed to empower and showcase Micro, Small, and Medium Enterprises (MSMEs/UMKM). Built with **Next.js** and **Tailwind CSS**, this platform serves as a digital directory that allows users to discover local businesses, view detailed profiles, and locate them via interactive maps.
 
-First, run the development server:
+The project emphasizes a smooth user experience with advanced animations powered by **GSAP** and responsive design principles.
+
+## 🛠 Tech Stack
+
+* **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [GSAP](https://greensock.com/gsap/) (GreenSock Animation Platform)
+* **Maps:** [Leaflet](https://leafletjs.com/) & React Leaflet
+* **Icons:** Lucide React
+* **Containerization:** Docker
+
+## ✨ Key Features
+
+* **🔍 Advanced Search & Discovery:** Users can search for businesses by name or filter them by category and location.
+* **🗺️ Interactive Maps:** Integrated map view to visualize MSME locations dynamically using Leaflet.
+* **🎨 Immersive UI/UX:** High-quality animations and transitions powered by GSAP for a polished feel.
+* **📱 Fully Responsive:** Optimized for all devices, featuring a mobile-first navigation design.
+* **🌓 Dark/Light Mode:** Built-in theme switching capability for user preference.
+* **📄 Detailed Business Profiles:** Dedicated pages for each MSME showcasing products, descriptions, and galleries.
+
+## 📂 Project Structure
+
+```text
+.
+├── public/                 # Static assets (images, icons)
+├── src/
+│   ├── app/                # Next.js App Router pages
+│   │   ├── umkm/           # Directory listing & details pages
+│   │   ├── search/         # Search functionality page
+│   │   └── mitra/          # Partnership page
+│   ├── components/         # Reusable UI components (Navbar, Cards, etc.)
+│   ├── data/               # Static JSON data (mock data for UMKMs)
+│   ├── hooks/              # Custom React hooks (useMap, useCarousel, etc.)
+│   ├── lib/                # Utility libraries (GSAP config)
+│   └── utils/              # Helper functions
+├── Dockerfile              # Docker configuration
+├── next.config.mjs         # Next.js configuration
+└── tailwind.config.js      # Tailwind CSS configuration
+````
+
+## 🚀 Getting Started
+
+### 1\. Prerequisites
+
+Ensure you have the following installed:
+
+  * [Node.js](https://nodejs.org/) (v18 or higher)
+  * [NPM](https://www.npmjs.com/) or Yarn
+
+### 2\. Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone <repository-url>
+cd mia_umkm
+npm install
+```
+
+### 3\. Running Development Server
+
+Start the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](https://www.google.com/search?q=http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 4\. Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build the application for production:
 
-# mia_umkm
+```bash
+npm run build
+npm start
+```
 
-Aplikasi berbasis Next.js untuk menampilkan dan menjelajahi data Usaha Mikro, Kecil, dan Menengah (UMKM) lokal. Proyek ini dibangun dengan fokus pada performa dan pengalaman pengguna yang responsif.
+-----
 
-## Fitur Utama
+## 🐳 Docker Deployment
 
-- **Daftar UMKM:** Menampilkan ringkasan UMKM dalam bentuk kartu (Card) di halaman utama.
-- **Halaman Detail Dinamis:** Menampilkan informasi lengkap setiap UMKM/page.js].
-- **Integrasi Peta:** Halaman detail UMKM menyertakan peta interaktif (embed iframe) yang menampilkan lokasi UMKM berdasarkan data koordinat/UMKMDetailClient.js].
-- **Fungsionalitas Pencarian:** Navigasi dilengkapi dengan fitur pencarian yang responsif dan juga tersedia dalam mode mobile.
-- **Carousel Otomatis:** Halaman beranda menampilkan carousel/banner dengan navigasi dan pemutaran otomatis untuk promosi atau informasi.
-- **Data Lokal:** Data UMKM saat ini disimpan secara lokal dalam file JSON (`src/data/umkm.json`).
+This project includes a `Dockerfile` for easy containerization.
 
-## Teknologi
+1.  **Build the Image:**
 
-- **Framework:** [Next.js](https://nextjs.org/) (v15.5.6) menggunakan App Router.
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) untuk utility-first CSS.
-- **Fonts:** Menggunakan font [Geist](https://vercel.com/font) (`--font-geist-sans` dan `--font-geist-mono`) melalui `next/font/google`.
-- **Ikon:** [Lucide React](https://lucide.dev/icons/search).
+    ```bash
+    docker build -t mia-umkm-app .
+    ```
 
-## Memulai Proyek
+2.  **Run the Container:**
 
-Proyek ini menggunakan `npm` sebagai manajer paket.
+    ```bash
+    docker run -p 3000:3000 mia-umkm-app
+    ```
+
+The application will be accessible at `http://localhost:3000`.
+
+
+## 📄 License
+
+This project is open-source and available under the **MIT License**.
+
+-----
+
+Copyright © 2025 RapzzKY
+
+```
+```
